@@ -180,7 +180,6 @@ Our most recent privacy controls are available for the following Office products
 - Loop
 - OneNote
 - Outlook
-
 - PowerPoint
 - Visio
 - Word
