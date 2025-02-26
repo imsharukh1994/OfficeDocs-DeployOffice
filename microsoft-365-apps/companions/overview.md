@@ -76,5 +76,5 @@ For more information, see [Microsoft 365 companions update process](<INSERT LINK
 
 ## Related Articles:
 
-- [Overview of People app](people.md)
-- [Overview of File Search](file_search.md)
+- [People app](people.md)
+- [File Search app](file-search.md)
