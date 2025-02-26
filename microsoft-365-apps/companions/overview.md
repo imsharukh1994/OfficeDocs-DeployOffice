@@ -29,18 +29,21 @@ Microsoft 365 companions is a suite of apps designed to enhance productivity dir
 
 ## Who is eligible to receive Microsoft 365 companion apps?
 
-Microsoft 365 companion apps is available to users who have an existing installation of Microsoft 365 desktop apps, are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md)(Beta Channel) and are running Windows 11.
+Microsoft 365 companion apps are available to users who:  
+- Have Microsoft 365 desktop apps installed 
+- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) (Beta Channel) 
+- Are running Windows 11  
 
-For a full list of Office 365 and Microsoft 365 plans, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).
+For a full list of Office 365 and Microsoft 365 plans, see [Product IDs supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).
 
 
 > [!NOTE]
-> People app requires the user to have an eligible Teams SKU. If the user is not eligible for a Teams SKU, the app will display the following error:  
+> The People app requires the user to have access to a Microsoft 365 plan that includes Teams. If the user's plan doesn't include Teams, the app displays the following error:  
 > `<Insert License Error XX>`
 
-## How will these apps be made available to the user?
+## When these apps available to the user?
 
-MMicrosoft 365 companion apps will be deployed to eligible users starting in March.
+Microsoft 365 companion apps are deploying to eligible users starting in March.
 
 ### How to opt out
 
@@ -51,17 +54,17 @@ If you don’t want Microsoft 365 companion apps to be installed, follow these s
 3. Select **Microsoft 365 companion apps**, then clear the checkbox for **Enable automatic installation of Microsoft 365 companion apps**.
 
 > [!NOTE]
-> Clearing the checkbox will not remove Microsoft 365 companion apps from devices where they’ve already been installed.  While there is no dedicated Group Policy or Cloud Policy setting to disable automatic installation, administrators can manage deployment through the Microsoft 365 Apps admin center.
+> Clearing the checkbox doesn't remove Microsoft 365 companion apps from devices where they're already installed. While there's no dedicated Group Policy or Cloud Policy setting to disable automatic installation, administrators can manage deployment through the Microsoft 365 Apps admin center.
 
-## When will Microsoft 365 companion Apps be available?
+## When are Microsoft 365 companion apps available?
 
 | Channel       | Date                     |
 |--------------|--------------------------|
 | Beta Channel | Refer to Roadmap ID XX   |
 
-## What will users see?
+## What do users see?
 
-Once Microsoft 365 companions are installed, the People app and File Search app will automatically launch on startup. Users can disable auto-launch on startup via the App settings. For the best experience, users can choose to pin the apps to the taskbar; admins can configure to pin the apps to the taskbar via the Start Layout policy. 
+Once Microsoft 365 companions are installed, the People app and File Search app automatically launch on startup. Users can disable autolaunch via the app settings. For the best experience, users can choose to pin the apps to the taskbar; admins can configure to pin the apps to the taskbar via the Start Layout policy. 
 
 For more information, see [Customized the Start layout](/windows/configuration/start/layout).
 
