@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about the Microsoft 365 companions apps, including availability, opt-out options, and feedback mechanisms."
-ms.date: 02/18/2025
+ms.date: 02/28/2025
 ---
 
 # Overview of Microsoft 365 companion apps
@@ -29,7 +29,8 @@ Microsoft 365 companions is a suite of apps designed to enhance productivity dir
 
 ## Who is eligible to receive Microsoft 365 companion apps?
 
-Microsoft 365 companion apps are available to users who:  
+Microsoft 365 companion apps are available to users who:
+
 - Have Microsoft 365 desktop apps installed 
 - Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) (Beta Channel) 
 - Are running Windows 11  
