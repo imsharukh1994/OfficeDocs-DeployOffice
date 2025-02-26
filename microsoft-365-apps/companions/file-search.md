@@ -22,8 +22,6 @@ File Search Companion is an app that makes it easy to find and access your Micro
 
 Designed for efficiency, File Search Companion helps you stay focused by providing quick access to relevant files without disrupting your workflow. Whether you're searching by file name, author, or keywords, the app delivers fast and accurate results across OneDrive, SharePoint, and other Microsoft 365 services.
 
-:::image type="content" source="media/file-search.png" alt-text="Windows desktop showing the File Search interface open, displaying search results for documents and files related to architecture".:::
-
 ## Key features
 
 - Comprehensive search – Quickly locate Microsoft 365 files and folders across various platforms, including SharePoint and OneDrive.
