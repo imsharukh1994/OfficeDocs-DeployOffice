@@ -17,8 +17,6 @@ ms.date: 02/24/2025
 
 The People companion app helps teams collaborate efficiently by providing quick access to employee profiles, organizational charts, and contact information—all from the Windows taskbar. Users can easily search for coworkers, view shared files, check availability, and start conversations without switching between apps. By integrating with your organization’s directory, the app ensures that profile details remain up to date, making it easier to connect with the right people at the right time.
 
-:::image type="content" source="media/people-app.png" alt-text="Windows desktop showing the People app open, displaying a list of favorite and top contacts with availability status and communication options.":::
-
 ## Key Features
 
 - View a Person’s Card – Quickly access detailed profiles of colleagues, including their roles, contact information, and more.
@@ -26,12 +24,10 @@ The People companion app helps teams collaborate efficiently by providing quick 
 - Org Chart Information – Navigate through the organizational structure to understand team hierarchies and reporting lines.
 - Start a Conversation – Initiate conversations directly through Teams or Email, making it easy to collaborate and communicate.
 
-## Availability
-
-The People Companion app is available for select Microsoft 365 plans that include Teams integration.
-
 ## Privacy and Security
 
 - Profile accuracy – The app syncs with your organization’s directory to maintain accurate and up-to-date employee information.
 - Data protection – Stringent security measures are in place to ensure that your information remains private.
 - External communication – Users can connect with external contacts if they previously interacted through Microsoft 365 services, such as Teams or email.
+
+:::image type="content" source="media/people-app.png" alt-text="Windows desktop showing the People app open, displaying a list of favorite and top contacts with availability status and communication options.":::
