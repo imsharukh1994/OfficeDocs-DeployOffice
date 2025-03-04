@@ -28,4 +28,4 @@ Older, unsupported operating systems can cause performance and reliability issue
 
 This article is updated as more information regarding security updates, feature updates, and management guidance becomes available.
 
-For more information, see [Windows lifecycle documentation](https://learn.microsoft.com/lifecycle/faq/windows).
+For more information, see [Windows lifecycle documentation](/lifecycle/faq/windows).
