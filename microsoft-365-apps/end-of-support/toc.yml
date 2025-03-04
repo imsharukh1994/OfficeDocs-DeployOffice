@@ -2,7 +2,7 @@ items:
   - name: End of support resources
     href: resources.md
   - name: Connectivity to Microsoft 365 services
-    href: microsoft-365-services-connectivity.md
+    href: microsoft-365-services-connectivity.md 
 
   - name: Microsoft 365 Apps
     items:
@@ -16,6 +16,10 @@ items:
         href: windows-server-support.md
       - name: Migration from Windows Server
         href: windows-server-migration.md
+      - name: Microsoft Store installation type
+        href: end-of-support-microsoft-store.md
+      - name: Windows Arm-based PCs
+        href: end-of-support-32bit-arm.md
 
   - name: Other Office products
     items:
