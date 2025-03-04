@@ -17,7 +17,7 @@ items:
       - name: Migration from Windows Server
         href: windows-server-migration.md
       - name: Microsoft Store installation type
-        href: end-of-support-microsoft-store.md
+        href: microsoft-store-install-type-support.md
       - name: Windows Arm-based PCs
         href: end-of-support-32bit-arm.md
 
