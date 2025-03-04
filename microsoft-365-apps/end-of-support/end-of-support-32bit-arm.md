@@ -12,7 +12,7 @@ description: Support for the 32-bit edition of Microsoft 365 Apps on Windows Arm
 ms.date: 03/04/2025
 ---
 
-# End of Support for 32-bit Microsoft 365 Apps on Windows Arm-based PCs
+# 32-bit Windows Arm-based devices end of support for Microsoft 365 Apps
 
 Support for the 32-bit edition of Microsoft 365 Apps on Windows Arm-based devices is ending. Feature updates stop in October 2025, and security updates end in December 2026.
 

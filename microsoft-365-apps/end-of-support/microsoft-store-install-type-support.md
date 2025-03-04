@@ -12,7 +12,7 @@ description: Support for the Microsoft Store installation type of Microsoft 365 
 ms.date: 03/04/2025
 ---
 
-# End of Support for the Microsoft Store Installation Type of Microsoft 365 Apps
+# Microsoft Store Installation Type end of support for Microsoft 365 Apps
 
 Support for the Microsoft Store installation type of Microsoft 365 Apps is ending. Feature updates will stop after October 2025, and security updates will end in December 2026.
 
