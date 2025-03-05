@@ -1,33 +1,36 @@
 ---
-title: Overview of People companion app
-description: Learn about the People Companion app, which enhances team collaboration by providing quick access to employee profiles, organizational charts, and contact information.
-author: nicholasswhite
+title: "Overview of Microsoft 365 companions People"
 ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
+ms.collection: 
+ - tier1
+ - essentials-overview
 ms.localizationpriority: medium
-ms.collection: Tier1
-recommendations: false
-ms.date: 02/24/2025
+ms.custom: intro-overview
+recommendations: true
+description: "Learn about the People Companion app, including key features, availability, and privacy considerations."
+ms.date: 03/07/2025
 ---
 
-# Overview of People companion app
+# Overview of Microsoft 365 companions People
 
-The People companion app helps teams collaborate efficiently by providing quick access to employee profiles, organizational charts, and contact information—all from the Windows taskbar. Users can easily search for coworkers, view shared files, check availability, and start conversations without switching between apps. By integrating with your organization’s directory, the app ensures that profile details remain up to date, making it easier to connect with the right people at the right time.
+The People companion app helps users quickly find coworkers, view org charts, check availability, and start conversations—all without switching between apps.
 
 ## Key Features
 
-- View a Person’s Card – Quickly access detailed profiles of colleagues, including their roles, contact information, and more.
-- Availability Information – Check the availability status of team members to find the best time to connect.
-- Org Chart Information – Navigate through the organizational structure to understand team hierarchies and reporting lines.
-- Start a Conversation – Initiate conversations directly through Teams or Email, making it easy to collaborate and communicate.
+- View a person’s card - Quickly access detailed profiles of colleagues, including their roles, contact information, and more.
+- Availability information - Check the availability status of team members to find the best time to connect.
+- Org chart information - Navigate through the organizational structure to understand team hierarchies and reporting lines.
+- Start a conversation - Initiate conversations directly through Teams or Email, making it easy to communicate.
 
 ## Privacy and Security
 
 - Profile accuracy – The app syncs with your organization’s directory to maintain accurate and up-to-date employee information.
 - Data protection – Stringent security measures are in place to ensure that your information remains private.
-- External communication – Users can connect with external contacts if they previously interacted through Microsoft 365 services, such as Teams or email.
+- External communication – Users can connect with external contacts if they’ve interacted through Microsoft 365 services, such as Teams or email.
 
 :::image type="content" source="media/people-app.png" alt-text="Windows desktop showing the People app open, displaying a list of favorite and top contacts with availability status and communication options.":::
