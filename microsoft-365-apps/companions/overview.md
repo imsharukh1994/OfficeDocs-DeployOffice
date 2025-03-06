@@ -40,7 +40,7 @@ For a full list of Office 365 and Microsoft 365 plans, see [Product IDs supporte
 
 ## How will Microsoft 365 companion apps get deployed?
 
-Microsoft 365 companion apps automatically deploy to eligible users according to the schedule in the following section. This deployment is part of the Microsoft 365 update process.
+Microsoft 365 companion apps automatically deploy to eligible users according to the [deployment schedule](#what-is-the-deployment-schedule). This deployment is part of the Microsoft 365 update process.
 
 ### How to opt out
 
