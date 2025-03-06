@@ -1,72 +1,69 @@
 ---
-title: "Microsoft 365 companions apps overview (preview)"
+title: "Microsoft 365 Companions apps overview"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
-ms.collection: 
- - tier1
- - essentials-overview
+ms.collection:
+- tier1
+- essentials-overview
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Learn about the Microsoft 365 companions apps, including availability, opt-out options, and feedback mechanisms."
-ms.date: 03/07/2025
+description: "Learn about the Microsoft 365 Companions apps, including availability, opt-out options, and feedback mechanisms."
+ms.date: 02/18/2025
 ---
 
-# Overview of Microsoft 365 companion apps
+# Overview of Microsoft 365 companion apps (preview)
 
-Microsoft 365 companion apps are designed to enhance productivity by providing users with quick access to key tools directly from the Windows 11 taskbar. These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, and streamline workflows without interrupting their tasks. Whether searching for colleagues, retrieving recently used documents, or navigating organizational charts, the People app and File Search app help users work smarter and stay connected.
+Microsoft 365 companions is a suite of apps designed to enhance productivity by providing users with quick access to key tools directly from the Windows 11 taskbar. The first two apps are:
 
-## What are Microsoft 365 companion apps?
+- People App: Allows users to quickly look up anybody in their enterprise and browse organizational charts, view contact information, and easily communicate with colleagues.
+- File Search App: Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents.
 
-Microsoft 365 companions is a suite of apps designed to enhance productivity directly from the Windows 11 taskbar. The first two apps are:
-
-- People: Allows users to quickly look up anybody in their enterprise and browse organizational charts, view contact information, and easily communicate with colleagues. For more information, see [Overview of Microsoft 365 companions People](people.md) 
-- File Search: Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents. For more information, see [Overview of Microsoft 365 companions File Search](file-search.md)
+These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, and streamline workflows without interrupting their tasks. Whether searching for colleagues, retrieving recently used documents, or navigating organizational charts, the People app and File Search app help users work smarter and stay connected.
 
 ## Who is eligible to receive Microsoft 365 companion apps?
 
 Microsoft 365 companion apps are available to users who:
 
-- Have Microsoft 365 desktop apps installed 
-- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) (Beta Channel) 
-- Are running Windows 11  
+- Have Microsoft 365 desktop apps installed
+- Are part of the [Microsoft 365 Insider Program for Business](../insider/overview.md) (Beta Channel)
+- Are running Windows 11
 
 For a full list of Office 365 and Microsoft 365 plans, see [Product IDs supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).
 
-
 > [!NOTE]
-> The People app requires the user to have access to a Microsoft 365 plan that includes Teams. If the user's plan doesn't include Teams, the app displays the following error: *It looks like your Microsoft 365 plan doesn’t support this app. Please contact your admin for assistance.*
+> The People app requires the user to have access to a Microsoft 365 plan that includes Teams. If the user's plan doesn't include Teams, the app will still be available, but calling and instant messaging functionality will be disabled.
 
-## How will these apps be made available?
+## How will Microsoft 365 companion apps get deployed
 
-Microsoft 365 companion apps are deploying to eligible users starting in March.
+Microsoft 365 companion apps automatically deploy to eligible users according to the schedule in the following section. This deployment is part of the Microsoft 365 update process.
 
 ### How to opt out
 
-If you don’t want Microsoft 365 companion apps to be installed, follow these steps:
+If you don’t want Microsoft 365 companion apps to be installed automatically, follow these steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com/) with an admin account.
 2. Go to **Customize** > **Device Configuration** > **Modern Apps Settings**.
-3. Select **Microsoft 365 companion apps**, then clear the checkbox for **Enable automatic installation of Microsoft 365 companion apps**.
+3. Select **Microsoft 365 companions apps (preview)**, then clear the checkbox for **Enable automatic installation of Microsoft 365 companion apps**.
 
 > [!NOTE]
 > Clearing the checkbox doesn't remove Microsoft 365 companion apps from devices where they're already installed. While there's no dedicated Group Policy or Cloud Policy setting to disable automatic installation, administrators can manage deployment through the Microsoft 365 Apps admin center.
 
-## When are Microsoft 365 companion apps available?
+## What is the deployment schedule?
 
-| Channel       | Date                     |
-|--------------|--------------------------|
-| Beta Channel | Refer to Roadmap ID XX   |
+| Channel      | Date                   |
+| ------------ | ---------------------- |
+| Beta Channel | Refer to Roadmap ID XX |
 
 ## What will users see?
 
-Once Microsoft 365 companions are installed, the People app and File Search app automatically launch on startup. Users can disable autolaunch via the app settings. For the best experience, users can choose to pin the apps to the taskbar; admins can configure to pin the apps to the taskbar via the Start Layout policy. 
+Once Microsoft 365 companions are installed, the People app and File Search app automatically launch on startup. Users can disable autolaunch through the app settings. For the best experience, users can choose to pin the apps to the taskbar; admins can configure to pin the apps to the taskbar via the Start Layout policy.
 
-For more information, see [Customized the Start layout](/windows/configuration/start/layout).
+For more information, see [Customize the Start layout](/windows/configuration/start/layout).
 
 :::image type="content" source="media/taskbar-people-file-search.png" alt-text="The Windows 11 taskbar showing the search bar, OneNote, Word, and Microsoft 365 Companion apps, including People and File Search.":::
 
@@ -74,4 +71,4 @@ For more information, see [Customized the Start layout](/windows/configuration/s
 
 After installation, Microsoft 365 companion apps receive periodic updates with new features and quality improvements. The update process for People app and File Search app is different from the update process for other Microsoft 365 apps, such as Word and Excel.
 
-Join the [Microsoft Community Hub](https://techcommunity.microsoft.com/) to connect with other users, ask questions and more. 
+Join the [Microsoft Community Hub](https://techcommunity.microsoft.com/) to connect with other users, ask questions, share insights, and stay informed about the latest updates.
