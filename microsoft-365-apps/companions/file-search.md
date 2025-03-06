@@ -1,5 +1,5 @@
 ---
-title: "Overview of Microsoft 365 companions File Search"
+title: "Overview of File Search companion"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -12,13 +12,13 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Learn about the File Search Companion app, including key features, search capabilities, and privacy considerations."
+description: "Learn about the File Search companion, including key features, search capabilities, and privacy considerations."
 ms.date: 03/07/2025
 ---
 
-# Overview of Microsoft 365 companions File Search
+# Overview File Search companion
 
-File Search Companion lets users quickly find and access Microsoft 365 files directly from the Windows taskbar, eliminating the need to switch between apps or storage locations. Search by file name, author, or keywords to get fast, accurate results from OneDrive, SharePoint, Teams, Outlook, and other Microsoft 365 services.
+File Search companion lets users quickly find and access Microsoft 365 files directly from the Windows taskbar, eliminating the need to switch between apps or storage locations. Search by file name, author, or keywords to get fast, accurate results from OneDrive, SharePoint, Teams, Outlook, and other Microsoft 365 services.
 
 ## Key Features
 
@@ -29,9 +29,9 @@ File Search Companion lets users quickly find and access Microsoft 365 files dir
 
 ## Who can see my files?
 
-You control your file visibility in File Search Companion. Only you can see your private files unless you choose to share them. Files stored in shared locations, such as Microsoft 365 team sites, are accessible to team members with the appropriate permissions.
+You control your file visibility in File Search companion. Only you can see your private files unless you choose to share them. Files stored in shared locations, such as Microsoft 365 team sites, are accessible to team members with the appropriate permissions.
 
 > [!NOTE]
-> File Search Companion currently supports Microsoft 365 files only. Non-Microsoft files aren't included in search results.
+> File Search companion currently supports Microsoft 365 files only. Non-Microsoft files aren't included in search results.
 
 :::image type="content" source="media/file-search.png" alt-text="Windows desktop showing the File Search interface open, displaying search results for documents and files related to architecture.":::
