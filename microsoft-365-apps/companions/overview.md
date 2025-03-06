@@ -12,8 +12,8 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Learn about the Microsoft 365 companions apps, including availability, opt-out options, and feedback mechanisms."
-ms.date: 02/18/2025
+description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
+ms.date: 03/06/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
@@ -23,7 +23,7 @@ Microsoft 365 companions is a suite of apps designed to enhance productivity by 
 - People companion: Allows users to quickly look up anybody in their enterprise and browse organizational charts, view contact information, and easily communicate with colleagues.
 - File Search companion: Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents.
 
-These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, and streamline workflows without interrupting their tasks. Whether searching for colleagues, retrieving recently used documents, or navigating organizational charts, the People companion and File Search companion help users work smarter and stay connected.
+These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, and streamline workflows without interrupting their tasks. The People companion and File Search companion help users find colleagues, access recent documents, and navigate organizational charts to work smarter and stay connected.
 
 ## Who is eligible to receive Microsoft 365 companion apps?
 
@@ -36,9 +36,9 @@ Microsoft 365 companion apps are available to users who:
 For a full list of Office 365 and Microsoft 365 plans, see [Product IDs supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).
 
 > [!NOTE]
-> The People companion requires the user to have access to a Microsoft 365 plan that includes Teams. If the user's plan doesn't include Teams, the app will still be available, but calling and instant messaging functionality will be disabled.
+> The People companion requires a Microsoft 365 plan that includes Teams. If Teams isn't included, the app remains available, but calling and instant messaging are disabled.
 
-## How will Microsoft 365 companion apps get deployed?
+## How are Microsoft 365 companion apps deployed?
 
 Microsoft 365 companion apps automatically deploy to eligible users according to the [deployment schedule](#what-is-the-deployment-schedule). This deployment is part of the Microsoft 365 update process.
 
@@ -59,7 +59,7 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 | ------------ | ---------------------- |
 | Beta Channel | Refer to Roadmap ID XX |
 
-## What will users see?
+## What do users see?
 
 Once Microsoft 365 companions are installed, the People companion and File Search companion automatically launch on startup. Users can disable autolaunch through the app settings. For the best experience, users can choose to pin the apps to the taskbar; admins can configure to pin the apps to the taskbar via the Start Layout policy.
 
