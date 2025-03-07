@@ -167,3 +167,10 @@ Admins can use the `UniversalOutlookEnabled` parameter value `$false` on the **C
 
 > [!IMPORTANT]
 > For more detailed information on mapping classic Outlook policies to the new Outlook, please refer to our comprehensive guide [Map classic Outlook policies to new Outlook](/outlook/troubleshoot/installation/map-classic-outlook-policies-to-new-outlook).
+
+## Disable Outlook Data File (.pst) support in the new Outlook for Windows
+
+Admins can disable or limit Outlook Data File (.pst) support in the new Outlook for Windows. It can be done with the [OutlookDataFile mailbox policy](https://learn.microsoft.com/en-us/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps#-outlookdatafile). The new Outlook for Windows only enforces the [OutlookDataFile mailbox policy](https://learn.microsoft.com/en-us/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps#-outlookdatafile) of the primary account. For more information on enabling the policy, refer to the [OutlookDataFile parameter in Set-OwaMailboxPolicy](https://learn.microsoft.com/en-us/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps#-outlookdatafile).
+
+> [!IMPORTANT]
+> Outlook Data File (.pst) support is enabled by default.
