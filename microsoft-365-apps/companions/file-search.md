@@ -23,7 +23,7 @@ File Search companion lets users quickly find and access Microsoft 365 files dir
 ## Key Features
 
 - Comprehensive search - Quickly locate Microsoft 365 files and folders across various platforms.
-- Filter options - Narrow down search results using filters such as file type, author, date modified, and more.
+- Filter options - Narrow down search results using filters such as file type and author.
 - Preview files - View file previews directly within the app to quickly identify the right document.
 - Share files - Share files directly within the app, making collaboration easier and more efficient.
 
