@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 hideEdit: false
 description: "Provides migration guidance for OneNote for Windows 10"
-ms.date: 02/26/2025
+ms.date: 03/11/2025
 ---
 
 # OneNote for Windows 10 migration guidance
@@ -40,8 +40,11 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 2. Check if OneNote for Windows is installed by verifying if the executable file exists on the device.
 3. Check the version of OneNote for Windows 10 to ensure it’s on the latest version with important features to prevent data loss during migration.
 
-> [!NOTE]  
-> This script does not function for devices with OneNote for Windows 10 versions below 16001.14326.22094. IT admins must upgrade these devices according to their organization's policy.
+> [!NOTE]
+> This script does not function for devices with OneNote for Windows 10 versions below 16001.14326.22094. IT admins must upgrade these devices according to their organization's policy.  
+>  
+> To upgrade users to the latest version via Appx download, run the following command:  
+> `WinGet download 9wzdncrfhvjl --skip-license`
 
 4. Terminate all OneNote for Windows 10 processes.
 5. Back up any unsynced sections to the sandbox folder using the `onenote-uwp://backup:` command.
