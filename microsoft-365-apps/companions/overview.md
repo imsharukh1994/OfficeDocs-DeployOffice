@@ -33,7 +33,7 @@ Microsoft 365 companion apps are available to users who:
 - Have Microsoft 365 desktop apps installed
 - Are running Windows 11
 
-For a full list of Office 365 and Microsoft 365 plans, see [Product IDs supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).
+For a full list of Office 365 and Microsoft 365 plans, see [Product IDs supported by the Office Deployment Tool for Click-to-Run](/microsoft-365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).
 
 > [!NOTE]
 > The People companion requires a Microsoft 365 plan that includes Teams. If Teams isn't included, the app remains available, but calling and instant messaging are disabled.
