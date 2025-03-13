@@ -17055,6 +17055,7 @@ The following fields are collected:
 #### Office.Extensibility.OfficeJs.ExternalCodeServiceCore.ExecutePythonCode
 
 This event is triggered when the user initiates Copilot Advanced Analysis in Excel, which calls an OfficeJs API to execute Python code. The data is used to analyze API performance.
+
 The following fields are collected:
  
 - **CorrelationId** – The internal call correlation ID.
