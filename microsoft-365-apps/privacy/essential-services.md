@@ -4997,8 +4997,9 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **AuthToken** - String - Size of the user auth token.
    - **CampaignId** - String - Campaign ID associated with the purchase entry point.
    - **CountryCode** - String - 2 letter or 3 letter Country Code.
-   - **ProductId** - String - App Store ID of the product the request was made for.
    - **OriginalTransactionId** - String - Apple Transaction Id for the purchase.
+   - **ProductId** - String - App Store ID of the product the request was made for.
+  
 
 - **Office.iOS.Paywall.Provisioning.Response** - Critical Engineering Telemetry and Contract with Retail Federation Service (RFS) to collect the information provided in this. RFS is the internal service used within Microsoft for crosschecking the purchase. This is used to get the health of the API call made to RFS which would help in understand that the performance of the integration is as expected.  
 
