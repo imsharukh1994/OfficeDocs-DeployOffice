@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 02/11/2025
+ms.date: 03/13/2025
 ---
 
 # Required diagnostic data for Office
@@ -653,6 +653,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 In addition, the following fields are common for all events for Outlook for Android.
 
 - **aad_id** - a pseudonymous Microsoft Entra identifier
+
+- **build_package** - The build package format for the app (Android App Bundle (AAB) or Android Package Kit (APK)) that the app was built as. This will help us attribute bugs or issues to the new AAB format that will be rolling out on the Play store. By putting it in the common properties we can know if the AAB is causing more crashes than before.
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost, which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
@@ -14266,6 +14268,8 @@ This event is triggered at the end of a session and is used to detect what Assis
 
 The following fields are collected:
 
+- **Data_Data_BeMyEyes** - indicates if Be My Eyes app was running during the session.
+
 - **Data_Data_Dolphin** - indicates is Dolphin was running during the session
 
 - **Data_Data_Dragon**  indicates if Dragon was running during the session
@@ -17048,6 +17052,17 @@ The following fields are collected:
 - **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
 
 
+#### Office.Extensibility.OfficeJs.ExternalCodeServiceCore.ExecutePythonCode
+
+This event is triggered when the user initiates Copilot Advanced Analysis in Excel, which calls an OfficeJs API to execute Python code. The data is used to analyze API performance.
+
+The following fields are collected:
+ 
+- **CorrelationId** – The internal call correlation ID.
+
+- **Duration** – The time duration for this call to complete.
+
+
 #### Office.Extensibility.RichApiMethodInvocation
 
 When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance, and usage for Rich API method invocation.
@@ -19235,6 +19250,7 @@ This event is triggered when the user initiates Copilot Advance Analysis in Exce
 
 - **Tag** – A unique tag if diagnostic tag is not available.
 
+- **TimepointMilliseconds** - start time point for the event action.
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 
