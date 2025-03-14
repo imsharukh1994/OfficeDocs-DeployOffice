@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about the File Search companion, including key features, search capabilities, and privacy considerations."
-ms.date: 03/07/2025
+ms.date: 03/14/2025
 ---
 
 # Overview File Search companion

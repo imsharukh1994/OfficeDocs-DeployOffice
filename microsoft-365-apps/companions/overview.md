@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
-ms.date: 03/06/2025
+ms.date: 03/14/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
