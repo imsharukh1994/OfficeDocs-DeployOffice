@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of deployment for new Outlook for Windows"
-ms.date: 02/24/2025
+ms.date: 03/18/2025
 ---
 
 # Deployment overview for the new Outlook for Windows
@@ -42,7 +42,7 @@ For the new Outlook client to be successfully installed, computers must meet the
 
 Requirement | Version
 ------------|-------
-Windows |- Windows 10 Version 1809 (Build 17763) or higher. The new Outlook for Windows is preinstalled on new Windows devices and devices running Windows 11 version 23H2. </br>- Windows Server 2022 (20348.2402) or higher.
+Windows |- Windows 10 Version 2004 (Build 19041) or higher. The new Outlook for Windows is preinstalled on new Windows devices and devices running Windows 11 version 23H2. </br>- Windows Server 2022 (20348.2402) or higher.
 Classic Outlook app | Version 2303 Build 16227.20318 or higher to see the Try the new Outlook toggle. **Important:** Classic Outlook is only a requirement if you want users to be able to switch between classic Outlook and new Outlook. This prerequisite is optional if you only want your users to see the new Outlook client.
 WebView2  | Update to the latest version. For more information, see [Enterprise management of WebView2 Runtimes](/microsoft-edge/webview2/concepts/enterprise).
 
