@@ -34,4 +34,4 @@ The People companion helps users quickly find coworkers, view org charts, check 
 - Data protection – Stringent security measures are in place to ensure that your information remains private.
 - External communication – Users can connect with external contacts if they’ve interacted through Microsoft 365 services, such as Teams or email.
 
-:::image type="content" source="media/people-app.png" alt-text="Windows desktop showing the People companion open, displaying a list of favorite and top contacts with availability status and communication options.":::
+:::image type="content" source="media/people-app.png" alt-text="Screenshot of the Windows desktop displaying the People companion open, showing a list of favorite and top contacts with availability status and communication options.":::
