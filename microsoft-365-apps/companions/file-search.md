@@ -34,7 +34,6 @@ You control your file visibility in File Search companion. Only you can see your
 > [!NOTE]
 > File Search companion currently supports Microsoft 365 files only. Non-Microsoft files aren't included in search results.
 
-:::image type="content" source="media/file-search.png" 
-   alt-text="Screenshot showing the Windows desktop with the File Search interface open, displaying search results for documents and files related to architecture." 
-   lightbox="media/file-search.png" 
+:::image type="content" source="media/file-search.png"  
+   alt-text="Screenshot showing the Windows desktop with the File Search interface open, displaying search results for documents and files related to architecture."  
 :::
