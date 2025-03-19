@@ -63,7 +63,7 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 
 Once Microsoft 365 companions are installed, the People companion and File Search companion automatically launch on startup. Users can disable autolaunch through the app settings. For the best experience, users can choose to pin the apps to the taskbar; admins can configure to pin the apps to the taskbar via the [Customize the Start layout](/windows/configuration/start/layout).
 
-:::image type="content" source="media/taskbar-people-file-search.png" alt-text="The Windows 11 taskbar showing the search bar, OneNote, Word, and Microsoft 365 companion apps, including People companion and File Search companion.":::
+:::image type="content" source="media/taskbar-people-file-search.png" alt-text="Screenshot of the Windows 11 taskbar showing the search bar, OneNote, Word, and Microsoft 365 companion apps, including People companion and File Search companion.":::
 
 ## Feature and quality updates
 
