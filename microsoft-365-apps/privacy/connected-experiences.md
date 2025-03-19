@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 12/06/2024
+ms.date: 02/14/2025
 ---
 
 # Connected experiences in Office
@@ -134,6 +134,7 @@ The following table provides a list of those other connected experiences and pro
 | ------------- | ------------- |
 | @mention | [Use @mention in comments to tag someone for feedback](https://support.microsoft.com/office/644bf689-31a0-4977-a4fb-afe01820c1fd) |
 |Brainstorming diagram |[Create a brainstorming diagram](https://support.microsoft.com/office/642706c0-7e63-463b-8aa8-a9aa67367989)|
+|Collect Diagnostics <sup>[11]</sup>|When you choose **Settings** > **Help & Feedback** > **Collect Diagnostics** in Outlook on Mac, iOS, or Android devices.|
 | Coming Soon  |[Coming Soon](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Contact Support  | When you choose **Help** > **Contact Support** on the ribbon|
 | Custom import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |

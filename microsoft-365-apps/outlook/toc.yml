@@ -39,6 +39,8 @@ items:
         href: /powershell/exchange/exchange-online-powershell
       - name: Policy for admin-controlled migration 
         href: manage/admin-controlled-migration-policy.md   
+      - name: Newsletters in Outlook (Preview)
+        href: manage/newsletters.md
 
   - name: Security
     items:

@@ -12,7 +12,7 @@ ms.collection: Tier2
 recommendations: false 
 ai-usage: ai-assisted
 description: Learn how to use preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise to meet the needs of various users.
-ms.date: 09/13/2024 
+ms.date: 02/24/2025 
 ---  
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
@@ -27,7 +27,7 @@ For more detailed information on preferences and their deployment, see [Deploy p
 
 ## IgnoreUIOpenAfterInstall
 
-Determines whether to launch MAU GUI after MAU install/update. This is useful if IT Admin does not want users to see MAU GUI after an update.
+Determines whether the MAU GUI launches after installation or an update. IT admins can use this setting to prevent users from seeing the MAU GUI after an update.
 
 | Category        | Details |
 | --------------- | ------- |
@@ -36,7 +36,7 @@ Determines whether to launch MAU GUI after MAU install/update. This is useful if
 | Default Value   | FALSE |
 | Manageable      | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments        | Setting this to TRUE will prevent MAU GUI from launching after a MAU install or an update.<br><br>Note: This does not prevent MAU GUI from launching as a result of finding updates in AutomaticCheck mode. |
+| Comments        | When set to TRUE, the MAU GUI doesn't launch after installation or an update.<br><br>Note: This setting doesn't prevent MAU GUI from launching as a result of finding updates in AutomaticCheck mode. |
 
 ## AcknowledgedDataCollectionPolicy
 
@@ -52,9 +52,7 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Comments | Not setting or incorrectly setting this preference leads to Microsoft AutoUpdate (MAU):<br><ul><li>Repeatedly showing Data Collection policy</li><li>Not offering updates.</li></ul> |
 
 > [!NOTE] 
-> RequiredAndOptionalData is now deprecated. MAU has never used RequiredAndOptionalData and has always only used RequiredDataOnly for preferences. This preference has now been completely removed.
-
-
+> RequiredAndOptionalData is now deprecated. MAU never used RequiredAndOptionalData and only used RequiredDataOnly for preferences. This preference is now removed.
 
 ## HowToCheck
 
@@ -66,8 +64,8 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Type            | String |
 | Default Value   | AutomaticDownload |
 | Manageable      | Yes |
-| Accepted Values | AutomaticDownload<br>AutomaticCheck |
-| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>Manual - MAU checks only for its own updates, not for other updates. This option has been removed from GUI. Setting to Manual results in MAU not offering updates automatically. The following value is deprecated: <ul><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
+| Accepted Values | AutomaticDownload<br>AutomaticCheck<br>Manual |
+| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>Manual - MAU checks only for its own updates, not for other updates. This option is removed from GUI. Setting to Manual results in MAU not offering updates automatically. The following value is deprecated: <ul><li>Automatic – replaced by AutomaticCheck</li></ul><br> Setting to Manual results in MAU not offering updates automatically. |
 
 ## ChannelName
 
@@ -159,7 +157,7 @@ Here are examples of the notification and pop-up window:
 
 ## LastUpdate
 
-**DO NOT USE**. MAU uses this preference to track the last update check. It won't check for updates again until at least 12 hours pass from that time.
+**DO NOT USE**. MAU tracks the last update check with this preference. It checks for updates only after at least 12 hours.
 
 | Category | Details |
 | --- | --- |
@@ -167,7 +165,7 @@ Here are examples of the notification and pop-up window:
 | Type | Date |
 | Default Value | |
 | Manageable | No |
-| Comments | **Important** Don't include this entry in a managed profile.<br>Setting this value via managed profile has the following consequences:<br><ul><li>If set to future, MAU won't check for updates until 12 hours pass from that time.</li><li>If set to past or in an incorrect format, MAU checks for updates every two hours.</li></ul> |
+| Comments | **Important** Don't include this entry in a managed profile.<br>Setting this value via managed profile has the following consequences:<br><ul><li>If set to future, MAU checks for updates only after 12 hours.</li><li>If set to past or in an incorrect format, MAU checks for updates every two hours.</li></ul> |
 
 ## DisableVoiceOverAccessibility
 
@@ -183,7 +181,7 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 
 ## ReopenAfterGUIInstall
 
-**DO NOT USE**.  If set to TRUE, the MAU GUI will open during the first MAU launch after an update. This preference is removed after the MAU GUI's initial launch following the update.
+**DO NOT USE** If set to TRUE, the MAU GUI will open during the first MAU launch after an update. This preference is removed after the MAU GUI's initial launch following the update.
 
 | Category | Details |
 | --- | --- |
@@ -191,7 +189,7 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 | Type | Boolean |
 | Default Value | FALSE |
 | Manageable | No |
-| Comments | **Important** This preference is only to be used by MAU itself and shouldn't be included in a managed profile.<br>Setting this preference to TRUE in a managed profile causes the MAU GUI to open with every FBA process launch. |
+| Comments | **Important** This preference is only to be used by MAU itself and shouldn't be included in a managed profile.<br>Setting this preference to TRUE in a managed profile causes the MAU GUI to open with every First Boot Authentication (FBA) process launch. |
 
 ## ManifestServerExpiryDate
 
@@ -280,14 +278,14 @@ Example:
 | Type | Dictionary |
 | Default Value | |
 | Manageable | No |
-| Comments | Setting this preference might conflict with the Applications dictionary. It's advisable not to set it.<br>Note:<ul><li>This preference helps MAU internally reconcile various applications installed or registered by different users. IT Admins can use this preference to ensure that all users on a device receive the same application updates. **Important:** This preference must include all Microsoft applications supported by MAU installed on the device. Don't set this in a managed profile. |
+| Comments | Setting this preference might conflict with the Applications dictionary. It's advisable not to set it.<br>Note:<ul><li>This preference helps MAU internally reconcile various applications installed or registered by different users. IT Admins can use this preference to ensure that all users on a device receive the same application updates. **Important:** This preference must include all Microsoft applications supported by MAU installed on the device. Don't set in a managed profile. |
 
 
 ## HideOnGUI
 
 Part of application record in Applications dictionary.
 
-When set to TRUE in the application record, application won't be displayed on MAU GUI.
+When set to TRUE in the application record, the application doesn't appear on MAU GUI.
 
 | Category | Details |
 | --- | --- |
@@ -296,7 +294,7 @@ When set to TRUE in the application record, application won't be displayed on MA
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | This should be set for any app that shouldn't be displayed on the GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>Setting this disables the app from being updated via GUI when HowToCheck is set to AutomaticCheck. |
+| Comments | This setting should be applied to any app that shouldn't appear in the MAU GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>Setting this option prevents the app from being updated through the GUI when HowToCheck is set to AutomaticCheck. |
 
 
 ## UpdateReadyReminderIntervalInHours
@@ -330,7 +328,7 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 | Type | Dictionary |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Setting this incorrectly disables updates for the Microsoft 365 apps. |
+| Comments | Setting this option incorrectly prevents updates for Microsoft 365 apps. |
 
 
 ## OptionalUpdatesDeferralsDays

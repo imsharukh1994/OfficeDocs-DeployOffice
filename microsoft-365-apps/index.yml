@@ -1,58 +1,188 @@
 ### YamlMime:Hub
-
-title: Microsoft 365 Apps deployment documentation
-summary: Resources for IT professionals and admins on how to deploy and manage Microsoft 365 Apps.
+#root section (Required)
+title: Microsoft 365 Apps deployment documentation # < 60 chars
+summary: Resources for IT professionals and admins on how to deploy and manage Microsoft 365 Apps. # < 400 chars
 brand: m365
-
 metadata:
-  ms.date: 04/21/2023
   title: Microsoft 365 Apps deployment documentation
-  description: Learn how to deploy and manage Microsoft 365 Apps.  
-  brand: m365
-  ms.author: nwhite
-  author: nicholasswhite
-  ms.topic: hub-page
-  ms.collection: 
-   - tier1
-   - essentials-navigation
+  description: Learn how to deploy and manage Microsoft 365 Apps.
   ms.service: o365-proplus-itpro
-  ms.custom: intro-hub-or-landing
+  ms.topic: hub-page
+  author: nicholasswhite
+  ms.author: nwhite
+  ms.date: 01/30/2025
 
-# Card with summary style
-additionalContent:
-  # Supports up to 3 sections
-  sections:
-    - title: Discover # < 60 chars (optional)
-      items:
-        # Card
-        - title: Get Started
-          summary: Learn how to plan, deploy, and manage Microsoft 365 Apps in your organization.
-          url: deploy/deployment-guide-microsoft-365-apps.md
-        # Card
-        - title: Deploy
-          summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, or with Microsoft Configuration Manager.
-          url: deploy/plan-microsoft-365-apps.md
-        # Card
-        - title: Microsoft FastTrack
-          summary: Get migration and deployment assistance from experts at Microsoft.
-          url: https://www.microsoft.com/fasttrack
-        # Card
-        - title: Manage updates
-          summary: Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates.
+# Highlighted Content
+highlightedContent:
+  items:
+    - title: What's new in Microsoft 365 Apps
+      itemType: whats-new
+      url: deploy/whats-new.md
+
+    - title: Overview of deployment options
+      itemType: deploy
+      url: deploy/deployment-guide-microsoft-365-apps.md
+
+    - title: Licensing and activation overview
+      itemType: reference
+      url: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
+
+    - title: Overview of the Microsoft 365 Apps admin center
+      itemType: overview
+      url: admin-center/overview.md
+
+    - title: Privacy controls for Microsoft 365 Apps
+      itemType: reference
+      url: privacy/overview-privacy-controls.md
+
+    - title: Microsoft 365 Insider Program for Business
+      itemType: get-started
+      url: https://learn.microsoft.com/en-us/microsoft-365-apps/insider
+
+productDirectory:
+  title: Get started
+  summary: Learn how to prepare and plan for Microsoft 365 Apps deployment.
+  items:
+    - title: Assess your environment and requirements
+      imageSrc: /office/media/icons/search-blue.svg
+      links:
+        - url: deploy/assess-microsoft-365-apps.md
+          text: Review deployment requirements
+
+    - title: Plan your deployment strategy
+      imageSrc: /office/media/icons/deploy-blue.svg
+      links:
+        - url: deploy/plan-microsoft-365-apps.md
+          text: Explore deployment strategy
+
+    - title: Microsoft FastTrack
+      imageSrc: /office/media/icons/get-started-blue.svg
+      links:
+        - url: https://www.microsoft.com/fasttrack
+          text: Get FastTrack deployment assistance
+
+# Conceptual Content (Deployment, Updates, Licensing)
+conceptualContent:
+  items:
+    - title: Deployment
+      links:
+        - text: Deploy Microsoft 365 Apps from the cloud
+          url: deploy/deploy-microsoft-365-apps-cloud.md
+          itemType: deploy
+        - text: Deploy Microsoft 365 Apps from a local source
+          url: deploy/deploy-microsoft-365-apps-local-source.md
+          itemType: deploy
+        - text: Deploy with Configuration Manager
+          url: deploy/deploy-microsoft-365-apps-configuration-manager.md
+          itemType: deploy
+        - text: Overview of cloud update in the Microsoft 365 Apps admin center
+          url: admin-center/cloud-update.md
+          itemType: overview
+        - text: Customize deployments with the Office Customization Tool
+          url: admin-center/overview-office-customization-tool.md
+          itemType: overview
+
+    - title: Managing updates
+      links:
+        - text: Overview of update channels
           url: updates/overview-update-channels.md
-        # Card
-        - title: Microsoft 365 Apps for Mac
-          summary: Find guidance about deploying Microsoft 365 Apps (or Office) to Macs in your organization.
+          itemType: overview
+        - text: Change the update channel
+          url: updates/change-update-channels.md
+          itemType: how-to-guide
+        - text: Manage updates with Configuration Manager
+          url: updates/manage-microsoft-365-apps-updates-configuration-manager.md
+          itemType: how-to-guide
+        - text: Validate updates before deployment
+          url: admin-center/update-validation.md
+          itemType: reference
+        - text: Track security update status
+          url: admin-center/security-update-status.md
+          itemType: reference
+
+    - title: Licensing and activation
+      links:
+        - text: Overview of licensing and activation
+          url: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
+          itemType: overview
+        - text: Shared computer activation
+          url: licensing-activation/overview-shared-computer-activation.md
+          itemType: how-to-guide
+        - text: Troubleshoot activation issues
+          url: licensing-activation/troubleshoot-shared-computer-activation.md
+          itemType: learn
+        - text: Monitor app health and inventory
+          url: admin-center/microsoft-365-apps-health.md
+          itemType: reference
+
+    - title: Security and compliance
+      links:
+        - text: Overview of security baselines
+          url: security/security-baseline.md
+          itemType: overview
+        - text: Block VBA macros from the internet
+          url: security/internet-macros-blocked.md
+          itemType: how-to-guide
+        - text: Configure trusted locations
+          url: security/trusted-locations.md
+          itemType: how-to-guide
+        - text: Compliance and data protection
+          url: security/compliance-overview.md
+          itemType: overview
+
+    - title: Outlook
+      links:
+        - text: Overview of the new Outlook
+          url: outlook/overview-new-outlook.md
+          itemType: overview
+        - text: Managing updates for Outlook
+          url: outlook/manage/manage-updates-new-outlook-windows.md
+          itemType: how-to-guide
+        - text: Troubleshooting Outlook issues
+          url: outlook/troubleshoot/troubleshoot-overview-new-outlook.md
+          itemType: learn
+        - text: Licensing options for Outlook
+          url: outlook/get-started/licensing-options.md
+          itemType: reference
+        - text: Migration planning for the new Outlook
+          url: outlook/get-started/migration-planning.md
+          itemType: how-to-guide 
+
+    - title: Office for Mac
+      links:
+        - text: Deployment guide for Office for Mac
           url: mac/deployment-guide-for-office-for-mac.md
-        # Card
-        - title: Microsoft 365 Insider Program for Business
-          summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
-          url: /microsoft-365-apps/insider
-        # Card
-        - title: Troubleshooting
-          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft 365 Apps.
-          url: /office/troubleshoot/office-client-welcome
-        # Card
+          itemType: deploy
+        - text: Deploy Office for Mac via the Mac App Store
+          url: mac/deploy-mac-app-store.md
+          itemType: deploy
+        - text: Overview of activation for Office for Mac
+          url: mac/overview-of-activation-for-office-for-mac.md
+          itemType: overview
+        - text: Managing updates for Office for Mac
+          url: mac/deploy-updates-for-office-for-mac.md
+          itemType: how-to-guide
+        - text: Troubleshoot activation issues for Office for Mac
+          url: mac/licensing-helper-tool.md
+          itemType: learn
+
+# Additional Content
+additionalContent:
+  sections:
+    - title: Support and other resources
+      items:
+        - title: Community Support on Microsoft Q&A
+          summary: Get advice and answers from community experts.
+          url: https://learn.microsoft.com/answers/tags/9/m365
+        - title: Microsoft Support for Business
+          summary: Access Microsoft’s 1:1 support for business customers.
+          url: https://support.microsoft.com/supportforbusiness
         - title: End user help and learning
-          summary: Find end user help and learning resources for Microsoft 365 Apps.
+          summary: Help and training for end users using Microsoft 365 Apps.
           url: https://support.microsoft.com/microsoft-365
+        - title: Troubleshooting Microsoft 365 Apps
+          summary: Find solutions for common Microsoft 365 Apps issues.
+          url: /office/troubleshoot/office-client-welcome
+        - title: Microsoft Learn Documentation
+          summary: Browse all Microsoft 365 documentation.
+          url: /microsoft-365

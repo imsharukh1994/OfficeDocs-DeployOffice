@@ -53,7 +53,7 @@ If your organization is currently using web add-ins, no extra effort is required
      | Blue jeans Outlook Add-in               | Online Meetings        | [BlueJeans Meetings](https://appsource.microsoft.com/product/office365/wa104381523)                  |
      | Calendly for Outlook                    | Meeting Boosters       | [Calendly for Outlook](https://appsource.microsoft.com/product/office365/wa104381446)                |
      | Cisco Webex Meetings                    | Online Meetings        | [Cisco Webex Scheduler](https://appsource.microsoft.com/product/office365/wa104382035)               |
-     | Citrix Files for Outlook                | Attachment Management  | [ShareFile](https://appsource.microsoft.com/product/office365/wa104380913)                           |
+     | Citrix Files for Outlook                | Attachment Management  | [ShareFile](https://appsource.microsoft.com/product/office/WA200007922)                           |
      | Cofense Reporter                        | Phishing/Spam Reporting| PRIVATE- Cofense                    |
      |Colligo|Email and attachment management|[Colligo Email Manager for Office 365](https://appsource.microsoft.com/en-us/product/office/WA104381868?tab=Overview) |
      | Egress                                  | Encryption & Classification | [Egress Protect](https://appsource.microsoft.com/product/office365/wa104381968)               |

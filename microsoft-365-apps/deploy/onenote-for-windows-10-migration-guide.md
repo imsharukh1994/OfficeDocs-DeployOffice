@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 hideEdit: false
 description: "Provides migration guidance for OneNote for Windows 10"
-ms.date: 11/09/2024
+ms.date: 03/11/2025
 ---
 
 # OneNote for Windows 10 migration guidance
@@ -32,26 +32,37 @@ To identify users or devices in your organization using OneNote for Windows 10 v
 
 ## Sample script customization
 
-To ensure a smooth migration to OneNote for Windows, organizations must customize the following sample script to complete these functions:
+Before running the sample script, install OneNote on Windows on user devices if the app has not been installed. For more information, see [Deployment guide for OneNote](deployment-guide-onenote.md)
 
-- Installs OneNote on Windows on user devices. For more information, see [Deployment guide for OneNote](deployment-guide-onenote.md)
+To ensure a smooth migration to OneNote for Windows, organizations must customize the following sample script to complete these steps in order:
 
-- Updates OneNote for Windows 10 to the latest build to incorporate important features and prevent data loss during the migration of unsynced notes.
-    > [!NOTE]
-    > This script does not update OneNote for Windows 10 devices that aren't on version 16001.14326.22094. IT admins must upgrade these devices according to their organization's policy.
+1. Check if OneNote for Windows 10 is installed and if the path to the AppData folder for the app exists (which indicates if the user has opened the app before) to verify if migration is necessary.
+2. Check if OneNote for Windows is installed by verifying if the executable file exists on the device.
+3. Check the version of OneNote for Windows 10 to ensure it’s on the latest version with important features to prevent data loss during migration.
 
-- Terminates all OneNote for Windows 10 processes.
+> [!NOTE]
+> This script does not function for devices with OneNote for Windows 10 versions below 16001.14326.22094. IT admins must upgrade these devices according to their organization's policy.  
+>  
+> To upgrade users to the latest version via Appx download, run the following command:  
+> `WinGet download 9wzdncrfhvjl --skip-license`
 
-- Backs up any unsynced notebooks to the user's backup folder using the `onenote-uwp://backup:` command.
-  - The backups are stored in `C:\temp\OneNoteMigration`, however, feel free to edit the path to fit your organization’s needs.
-  - Each backup creates a corresponding folder for each notebook with unsynced sections within this path.
+4. Terminate all OneNote for Windows 10 processes.
+5. Back up any unsynced sections to the sandbox folder using the `onenote-uwp://backup:` command.
+6. Store the backups within the sandbox in:  
+   `$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\AppData\Local\OneNote\16.0\BackUp\`.
+7. Ensure only sections with unsynced content are backed up and organized in folders where each folder corresponds to a notebook.
+8. Parse through the `UWPBackUpStatus.json` to validate that the backup was successful.
 
-- Parse through the `UWPBackUpStatus.json` to validate the backup was successful.
-  - Uninstalling with a failed backup can lead to data loss.
-    > [!NOTE]
-    > To perform the backup, OneNote for Windows must be installed, and OneNote for Windows 10 must be updated to version 16001.14326.22094 or later.
-- Uninstalls OneNote for Windows 10.
-  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
+> [!WARNING]
+> Uninstalling with a failed backup can lead to data loss.
+
+9. Move the backup files to a location outside of the sandbox:  
+   `$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\`  
+   since the sandbox path will be deleted once the OneNote for Windows 10 app is uninstalled.
+10. Uninstall OneNote for Windows 10.
+11. Ensure OneNote for Windows 10 is uninstalled on a per-user basis and not on a per-device basis.  
+    This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
+
 
 > [!IMPORTANT]
 > Before using the sample script, you must customize it to fit your organization's specific deployment and migration requirements.

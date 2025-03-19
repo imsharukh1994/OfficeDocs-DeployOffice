@@ -24,9 +24,9 @@ ms.date: 05/25/2024
 
 The Microsoft 365 cloud environment is a hyperscale suite of service offerings that's constantly changing. In the technology industry, being consistently cutting-edge benefits productivity, security, and user happiness. Change in the Microsoft cloud has purpose: to deliver customer value, secure the environment, and delight users. The pace of change in Microsoft 365 is rapid and continuous - both adjectives describe the customer value pipeline that this model helps. Microsoft helps users increase efficiency in their organizations by offering innovative features and secure services.
 
-Microsoft uses an agile development model that promotes rapid development. This model shortens the time from when a change is initiated to when it's in production. To help improve usability, we aim to shorten the time between feature implementation and value realization for our customers. Agile development is important in the modern cloud environment. Using it, we can nimbly adjust engineering priorities that's based on customer feedback, market dynamics, regulatory requirements, and emerging risks. Swift integration of changes into your environment means that we receive feedback data faster, and then we can iteratively improve our services.
+Microsoft uses an agile development model that promotes rapid development. This model shortens the time from when a change is initiated to when it's in production. To help improve usability, we aim to shorten the time between feature implementation and value realization for our customers. Agile development is important in the modern cloud environment. Using it, we can nimbly adjust engineering priorities based on customer feedback, market dynamics, regulatory requirements, and emerging risks. Swift integration of changes into your environment means that we receive feedback data faster, and then we can iteratively improve our services.
 
-Many changes relate to new features that are designed to enhance the user experience. These changes are a category of change that's within a broader set. The broader set of categories of change includes service maintenance, security updates, and updates to meet the needs of the ever-changing regulatory and compliance landscape.
+Many changes relate to new features that are designed to enhance the user experience. These changes are a category of change that exist within a broader set. The broader set of categories of change includes service maintenance, security updates, and updates to meet the needs of the ever-changing regulatory and compliance landscape.
 
 Microsoft constantly improves Microsoft 365 services to help every person and every organization on the planet to achieve more. Our commitment to enhancing the user experience means that we offer a continuous stream of updates to the service. And to ease your deployment planning, we release client updates in alignment with release cycles. We design new features to improve productivity and delight users. Equally important is for features to operate in a secure and compliant environment. As part of the [shared responsibility model](/azure/security/fundamentals/shared-responsibility), Microsoft takes extensive measures to secure our environment. Our certifications hosted on the Microsoft [Service Trust Portal](https://aka.ms/stp) evidence our compliance with 100+ frameworks. The other half of the responsibility model – your environment – must also be secure and compliant, so we carefully consider potential customer impact when we structure our changes and the surrounding processes.
 
@@ -97,7 +97,7 @@ After a message is synced to Planner, it shows up in Planner as a task. Messages
 
 Each task is structured as:
 
-- The message post title has a prefix in brackets (for example, "\[SharePoint\] New feature") that indicates the service that the post is associated with. Figure 3 shows an example.
+- The message post title has a prefix in brackets (for example, "[SharePoint] New feature") that indicates the service that the post is associated with. Figure 3 shows an example.
 - The Start Date is set to the time the task was created in Planner.
 - The Published Date of the message post can be found in the Notes.
 
@@ -193,7 +193,7 @@ When you switch channels, there are certain considerations - such as loss of fea
 
 In conjunction with release channels, which are inherently controls themselves, Microsoft provides a selection of tools and configurations for further deploying, controlling, and managing your Microsoft 365 clients. The tools for managing your devices and the Microsoft 365 clients installed on them have historically been decentralized. In addition to a multitude of third-party options that are available, the Microsoft solutions include the following tools:
 
-  - [Microsoft Configuration Manager](/configmgr)
+- [Microsoft Configuration Manager](/configmgr)
 
   - [Microsoft Intune](/mem/intune)
 
@@ -227,19 +227,19 @@ The Microsoft 365 Apps admin center offers [inventory](../admin-center/inventory
 
 **Office inventory**
 
-  - Drill into detailed views of Office devices and add-in information.
+- Drill into detailed views of Office devices and add-in information.
   - View insights like channel/build spread, add in diversity, and more.
   - Export the data.
 
 **Security currency**
 
-  - View a dashboard for security update compliance status cross-channel.
+- View a dashboard for security update compliance status cross-channel.
   - Set your target goal and timeline to track and report.
   - Identify failing devices and take mitigating action.
 
 **Cloud Update**
 
-  - Set up update profiles for devices on Monthly Enterprise Channel or Current Channel to automatically receive updates.
+- Set up update profiles for devices on Monthly Enterprise Channel or Current Channel to automatically receive updates.
   - Takes advantage of Windows Delivery Optimization.
   - Maintain device compliance with update deadlines and update date exclusions.
   - Monitor the deployment of updates, giving you insights as well as the option to pause or roll the deployment back.

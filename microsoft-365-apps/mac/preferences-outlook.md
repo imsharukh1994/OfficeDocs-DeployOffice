@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
-ms.date: 01/28/2025
+ms.date: 02/25/2025
 ---
 
 # Set preferences for Outlook for Mac
@@ -54,6 +54,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
 - [Disable export](#disable-export)
 - [Disable Focused Inbox](#disable-focused-inbox)
+- [Disable Focused Inbox by Default](#disable-focused-inbox-by-default)
 - [Disable import](#disable-import)
 - [Disable Junk settings](#disable-junk-settings)
 - [Disable Pride theme](#disable-pride-theme)
@@ -523,6 +524,20 @@ Prevent users from viewing Focused Inbox.
 |Possible values|  false (default) <br/> true  |
 |Requires Configuration Profile| Yes |
 |Availability| 16.66 |
+
+### Disable Focused Inbox by Default
+
+Prevent users from viewing Focused Inbox but giving option to users to enable it.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| FocusedInboxOffByDefault|
+|Data Type|Boolean |
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability| 16.95 |
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
 ### Disable Copy or Move emails between accounts
 

@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 10/30/2024
+ms.date: 02/14/2025
 ---
 
 # Overview of optional connected experiences in Office
@@ -43,6 +43,10 @@ Also, the search experience on the [support.microsoft.com](https://support.micro
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://www.microsoft.com/privacy/privacystatement). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They aren't linked to you by the Bing organization.
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
+
+### Collect Diagnostics
+
+In Outlook on Mac, iOS, or Android devices, users working with Microsoft support representatives outside of the in-app support experience can share their Outlook logs with Microsoft by going to **Settings** > **Help & Feedback** > **Collect Diagnostics**. This experience requires a Microsoft owned service called PowerLift, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply.
 
 ### Feedback (web portal)
 
@@ -125,7 +129,7 @@ For more information, see [Account Privacy Settings](https://support.microsoft.c
 > [!NOTE]
 > - If the admin for your organization has provided you with a volume licensed version of Office 2019, Project 2019, or Visio 2019, go to **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Privacy Options**. There you should see a check box for **Turn on optional connected experiences**. If you don't see that check box in Project 2019 or Visio 2019, choose **Privacy Settings...** in that **Trust Center** dialog box. Then you should see a **Privacy Settings** dialog box appear with a check box for **Enable optional connected experiences**.
 > - Your privacy settings don't control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8).
-> - Your privacy settings don’t control whether Microsoft 365 Copilot can reference web content when responding to your prompts. Instead there is a separate [web content toggle](/copilot/microsoft-365/manage-public-web-access#web-content-toggle-for-users-only-for-microsoft-365-copilot) that allows you to make that choice. Referencing web content relies on the Bing search service. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
+> - Your privacy settings don’t control whether Microsoft 365 Copilot can reference web content when responding to your prompts. Instead there's a separate [web content toggle](/copilot/microsoft-365/manage-public-web-access#web-content-toggle-for-users-only-for-microsoft-365-copilot) that allows you to make that choice. Referencing web content relies on the Bing search service. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
 
 ## Required service data
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides guidelines for configuring and managing mailbox accounts and features in Microsoft 365 using Exchange PowerShell cmdlets and Cloud Policy."
-ms.date: 01/28/2025
+ms.date: 02/24/2025
 ---
 
 # Policy Management in new Outlook for Windows
@@ -164,3 +164,6 @@ While this policy hides the toggle within the application, it doesn't block the 
 Users can enable new Outlook via the toggle from the built-in Mail and Calendar application in Windows. To block new Outlook from these applications, organizations can block users from downloading and/or installing new Outlook using Intune or other management solutions.
 
 Admins can use the `UniversalOutlookEnabled` parameter value `$false` on the **CASMailbox** cmdlet to block organization accounts from using the built-in Mail and Calendar app in Windows. Check the syntax at [Set-CASMailbox -UniversalOutlookEnabled](/powershell/module/exchange/set-casmailbox#-universaloutlookenabled).
+
+> [!IMPORTANT]
+> For more detailed information on mapping classic Outlook policies to the new Outlook, please refer to our comprehensive guide [Map classic Outlook policies to new Outlook](/outlook/troubleshoot/installation/map-classic-outlook-policies-to-new-outlook).

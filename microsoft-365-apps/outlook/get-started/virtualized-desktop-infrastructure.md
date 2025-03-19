@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of the new Outlook for Windows for VDI"
-ms.date: 12/23/2024
+ms.date: 03/18/2025
 ---
 
 # Deploy the New Outlook for Windows on Virtualized Desktop Infrastructure
@@ -24,20 +24,12 @@ This article outlines the requirements, limitations, and deployment guidance for
 
 | Requirement    | Version                                                                                      |
 |----------------|----------------------------------------------------------------------------------------------|
-| **Windows**    | - Windows 10.0.17763.0 (1809) or later  </br>- Windows Server 2022 (20348.2402) or later  |
+| **Windows**    | - Windows 10.0.19041.0 (2004) or later  </br>- Windows Server 2022 (20348.2402) or later  |
 | **WebView2**   | Update to the latest version. For more information, see [Enterprise management of WebView2 Runtimes](/microsoft-edge/webview2/concepts/enterprise). |
 | **.NET Framework** | 4.7.2 or later                                                                          |
 
 > [!NOTE]
 > Windows Server 2019 and Windows Server 2016 are not supported.
-
-To avoid startup issues, add these processes to the exclusion list in your antivirus software:
-- `olk.exe`
-- `olkPushNotificationBackgroundTask.exe`
-- `xpdAgent.exe`
-- `relaunchNativeHost.exe`
-
-Alternatively, add these processes to the allowlist in your data loss prevention (DLP) software. For specific instructions, contact your DLP software provider.
 
 ## Virtualization Provider Requirements
 

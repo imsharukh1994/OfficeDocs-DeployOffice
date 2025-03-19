@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 01/08/2025
+ms.date: 03/13/2025
 ---
 
 # Required diagnostic data for Office
@@ -653,6 +653,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 In addition, the following fields are common for all events for Outlook for Android.
 
 - **aad_id** - a pseudonymous Microsoft Entra identifier
+
+- **build_package** - The build package format for the app (Android App Bundle (AAB) or Android Package Kit (APK)) that the app was built as. This will help us attribute bugs or issues to the new AAB format that will be rolling out on the Play store. By putting it in the common properties we can know if the AAB is causing more crashes than before.
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost, which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
@@ -10701,6 +10703,8 @@ The following fields are collected:
 
 - **Data\_ErrorID** - error identifier in case of operation failure
 
+- **Data_fAutoCreateOn** – indicates that Autocreate is turned on, which allows user to automatically save file to cloud when they create a new document.
+
 - **Data\_MainPdod** - The document identifier during this process session
 
 - **Data_StyleVersion** – version number of default Word styles.
@@ -14264,6 +14268,8 @@ This event is triggered at the end of a session and is used to detect what Assis
 
 The following fields are collected:
 
+- **Data_Data_BeMyEyes** - indicates if Be My Eyes app was running during the session.
+
 - **Data_Data_Dolphin** - indicates is Dolphin was running during the session
 
 - **Data_Data_Dragon**  indicates if Dragon was running during the session
@@ -16300,6 +16306,24 @@ The following fields are collected:
 
 - **WebViewShownDuration** - Duration for which the dime purchase page is shown to the user 
 
+#### Office.Android.DocsUI.Views.PrivacyFreDialogEvent
+
+This event is triggered when Office apps on Android are launched for the first time and users are presented with privacy dialogs. The data is used to monitor the health of our applications' First Run Experience (FRE) flow, determine its success state, and identify whether users encounter obstacles or potential points of confusion in the process of using the app for the first time. 
+
+The following fields are collected:
+
+- **Data_DialogDisplayDurationInMs** - the amount of time (in milliseconds) that the dialog is visible to the user.
+
+- **Data_DialogType** - the First Run dialog type.
+
+#### Office.Android.DocsUI.Views.SubscriptionFlowEvent
+
+The event is triggered when Office apps on Android are launched for the first time and users are first presented with the in-app premium subscription purchase screens. The data is used to monitor the health of our applications' First Run Experience (FRE) flow, determine its success state, and identify whether users encounter obstacles or potential points of confusion in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Data_SubscriptionFlowDurationInMs** - the amount of time (in milliseconds) that the subscription flow is visible to the user.
+
 
 #### Office.Android.EarlyTelemetry.AdErrorEvent
 
@@ -17026,6 +17050,17 @@ The following fields are collected:
 - **UserAgeGroup** - Logs age group of user like minor or adult.
 
 - **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
+
+#### Office.Extensibility.OfficeJs.ExternalCodeServiceCore.ExecutePythonCode
+
+This event is triggered when the user initiates Copilot Advanced Analysis in Excel, which calls an OfficeJs API to execute Python code. The data is used to analyze API performance.
+
+The following fields are collected:
+ 
+- **CorrelationId** – The internal call correlation ID.
+
+- **Duration** – The time duration for this call to complete.
 
 
 #### Office.Extensibility.RichApiMethodInvocation
@@ -19215,6 +19250,7 @@ This event is triggered when the user initiates Copilot Advance Analysis in Exce
 
 - **Tag** – A unique tag if diagnostic tag is not available.
 
+- **TimepointMilliseconds** - start time point for the event action.
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 
