@@ -7,13 +7,13 @@ audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.collection: 
- - tier1
+ - tier3
  - essentials-overview
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about the File Search companion, including key features, search capabilities, and privacy considerations."
-ms.date: 03/14/2025
+ms.date: 03/19/2025
 ---
 
 # Overview File Search companion
@@ -22,7 +22,7 @@ File Search companion lets users quickly find and access Microsoft 365 files dir
 
 ## Key Features
 
-- Comprehensive search - Quickly locate Microsoft 365 files and folders across various platforms.
+- Quickly locate Microsoft 365 files and folders across various platforms by searching for a file's name or its contents.
 - Filter options - Narrow down search results using filters such as file type and author.
 - Preview files - View file previews directly within the app to quickly identify the right document.
 - Share files - Share files directly within the app, making collaboration easier and more efficient.

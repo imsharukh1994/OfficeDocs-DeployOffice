@@ -7,13 +7,13 @@ audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.collection:
-- tier1
+- tier3
 - essentials-overview
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
-ms.date: 03/14/2025
+ms.date: 03/19/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
@@ -57,7 +57,7 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 
 | Channel      | Date                   |
 | ------------ | ---------------------- |
-| Beta Channel | Refer to Roadmap ID XX |
+| Beta Channel | March 26<sup>th</sup>|
 
 ## What do users see?
 

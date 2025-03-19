@@ -7,13 +7,13 @@ audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.collection: 
- - tier1
+ - tier3
  - essentials-overview
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about the People companion app, including key features, availability, and privacy considerations."
-ms.date: 03/14/2025
+ms.date: 03/19/2025
 ---
 
 # Overview of People companion
