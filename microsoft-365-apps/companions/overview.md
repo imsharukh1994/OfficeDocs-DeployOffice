@@ -18,7 +18,7 @@ ms.date: 03/19/2025
 
 # Overview of Microsoft 365 companion apps (preview)
 
-Microsoft 365 companions is a suite of apps designed to enhance productivity by leveraging the power of Microsoft Graph and providing users with quick access to key tools directly from the Windows 11 taskbar. The first two apps are:
+Microsoft 365 companions is a suite of apps designed to enhance productivity by using the power of Microsoft Graph and providing users with quick access to key tools directly from the Windows 11 taskbar. The first two apps are:
 
 - [People companion](people.md): Allows users to quickly look up anybody in their enterprise and browse organizational charts, view contact information, and easily communicate with colleagues.
 - [File Search companion](file-search.md): Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents
@@ -57,7 +57,7 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 
 | Channel      | Date                   |
 | ------------ | ---------------------- |
-| Beta Channel | Rollout will begin on March 26<sup>th</sup> 2025|
+| Beta Channel | Rollout will begin on March 26, 2025|
 
 ## What do users see?
 
