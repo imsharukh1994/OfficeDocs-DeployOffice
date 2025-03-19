@@ -21,7 +21,7 @@ ms.date: 03/19/2025
 Microsoft 365 companions is a suite of apps designed to enhance productivity by leveraging the power of Microsoft Graph and providing users with quick access to key tools directly from the Windows 11 taskbar. The first two apps are:
 
 - [People companion](people.md): Allows users to quickly look up anybody in their enterprise and browse organizational charts, view contact information, and easily communicate with colleagues.
-- [File Search companion](file-search.md): Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents.
+- [File Search companion](file-search.md): Enables users to quickly find Microsoft 365 files, preview file contents, send files to colleagues, and easily access recently used documents
 
 These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts, locate files, and streamline workflows without interrupting their tasks. The People companion and File Search companion help users find colleagues, access recent documents, and navigate organizational charts to work smarter and stay connected.
 
