@@ -21,11 +21,11 @@ This article lists new features, tools, and articles for IT Pros who deploy Micr
 
 ### End-of-support for 32-bit Microsoft 365 Apps on Windows Arm-based devices
 
-Support for the 32-bit edition of Microsoft 365 Apps for Windows Arm-based devices is ending. New feature updates stop in October 2025 and security updates end in December 2026. Organizations are encouraged to transition to supported architectures to ensure compatibility and security. For more information, see [32-bit Windows Arm-based devices end of support for Microsoft 365 Apps](../end-of-support/end-of-support-32bit-arm.md)
+Support for the 32-bit edition of Microsoft 365 Apps for Windows Arm-based devices is ending. New feature updates stop in October 2025 and security updates end in December 2026. Organizations are encouraged to transition to supported architectures to ensure compatibility and security. For more information, see [32-bit Windows Arm-based devices end of support for Microsoft 365 Apps](../end-of-support/end-of-support-32bit-arm.md).
 
 ### End-of-support for Microsoft Store Installation Type 
 
-Support for the Microsoft Store installation type of Microsoft 365 Apps is ending. Feature updates stop after October 2025, and security updates end in December 2026. Organizations are encouraged to transition to supported architectures to ensure compatibility and security. For more information, see [Microsoft Store Installation Type end of support for Microsoft 365 Apps](../end-of-support/microsoft-store-install-type-support.md)
+Support for the Microsoft Store installation type of Microsoft 365 Apps is ending. Feature updates stop after October 2025, and security updates end in December 2026. Organizations are encouraged to transition to supported architectures to ensure compatibility and security. For more information, see [Microsoft Store Installation Type end of support for Microsoft 365 Apps](../end-of-support/microsoft-store-install-type-support.md).
 
 ### Microsoft 365 Companions: People and File Search
 
