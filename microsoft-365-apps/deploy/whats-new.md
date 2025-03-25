@@ -67,7 +67,7 @@ Office LTSC 2024 is now available for organizations that need to run Office apps
 
 Office LTSC 2024 is supported on Windows 11, Windows 10, Windows 10 LTSC 2021/2019, and Windows Server 2022. For Arm-based devices, Windows 11 is required. The suite includes five years of Mainstream Support with no Extended Support period.
 
-For more information, see [Office LTSC 2024 overview](../../office/ltsc/2024/overview.md).
+For more information, see [Office LTSC 2024 overview](/office/ltsc/2024/overview).
 
 ## April 2024
 
