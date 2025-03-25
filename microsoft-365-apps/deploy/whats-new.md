@@ -67,7 +67,7 @@ Office LTSC 2024 is now available for organizations that need to run Office apps
 
 Office LTSC 2024 is supported on Windows 11, Windows 10, Windows 10 LTSC 2021/2019, and Windows Server 2022. For Arm-based devices, Windows 11 is required. The suite includes five years of Mainstream Support with no Extended Support period.
 
-For more information, see [Office LTSC 2024 overview](../../office/ltsc/2024/overview.md).
+For more information, see [Office LTSC 2024 overview](/office/ltsc/2024/overview.md).
 
 ## April 2024
 
@@ -87,13 +87,13 @@ Cloud update provides a modern update management solution for Microsoft 365 Apps
 
 ### Places Finder
 
-Places Finder introduces desk and workspace booking features, helping organizations manage office space more effectively. For more information, see [Enabling Places Finder](microsoft-365/places/enabling-places-finder).
+Places Finder introduces desk and workspace booking features, helping organizations manage office space more effectively. For more information, see [Enabling Places Finder](/microsoft-365/places/enabling-places-finder).
 
 ## May 2023
 
 ### Work location settings in Microsoft Places
 
-New work location settings in Microsoft Places allow organizations to configure and manage employee work locations more efficiently. For more information, see [Understanding work location in Microsoft Places](microsoft-365/places/understanding-work-location).
+New work location settings in Microsoft Places allow organizations to configure and manage employee work locations more efficiently. For more information, see [Understanding work location in Microsoft Places](/microsoft-365/places/understanding-work-location).
 
 ## March 2023
 
