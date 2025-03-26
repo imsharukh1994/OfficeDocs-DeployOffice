@@ -12,7 +12,7 @@ ms.collection: Tier2
 recommendations: false 
 ai-usage: ai-assisted
 description: Learn how to use preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise to meet the needs of various users.
-ms.date: 02/24/2025 
+ms.date: 03/26/2025 
 ---  
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
@@ -92,7 +92,7 @@ You can specify a ChannelName for each app by adding a ChannelName key and value
                 <key>ChannelName</key>
                 <string>Current</string>
         </dict>
-      ......
+      ...... 
 </dict>
 <key>ChannelName</key>
 <string>Beta</string>
@@ -280,7 +280,6 @@ Example:
 | Manageable | No |
 | Comments | Setting this preference might conflict with the Applications dictionary. It's advisable not to set it.<br>Note:<ul><li>This preference helps MAU internally reconcile various applications installed or registered by different users. IT Admins can use this preference to ensure that all users on a device receive the same application updates. **Important:** This preference must include all Microsoft applications supported by MAU installed on the device. Don't set in a managed profile. |
 
-
 ## HideOnGUI
 
 Part of application record in Applications dictionary.
@@ -295,7 +294,6 @@ When set to TRUE in the application record, the application doesn't appear on MA
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
 | Comments | This setting should be applied to any app that shouldn't appear in the MAU GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>Setting this option prevents the app from being updated through the GUI when HowToCheck is set to AutomaticCheck. |
-
 
 ## UpdateReadyReminderIntervalInHours
 
@@ -330,7 +328,6 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 | Manageable | Yes |
 | Comments | Setting this option incorrectly prevents updates for Microsoft 365 apps. |
 
-
 ## OptionalUpdatesDeferralsDays
 
 This defines the number of days to wait to offer/install updates after an update is released.
@@ -345,7 +342,6 @@ For more information, see: [Microsoft AutoUpdate and Deferred Updates](../mac/ma
 | Manageable | Yes |
 | Accepted Values | 1 - 28 |
 | Comments | This value has a tolerance of three days. IT Admins should add three days to the desired deferral days when setting this value. |
-
 
 ## OptionalUpdatesDeferrals
 
@@ -408,7 +404,6 @@ When set to FALSE, this disables the option to initiate a check for updates from
 
 :::image type="content" source="../mac/media/mau-preferences/microsoft-autoupdate-status.large.png" alt-text="Microsoft AutoUpdate interface on a Mac, displaying a message that 'All apps are up-to-date.' It has a checkbox for 'Automatically keep Microsoft apps up to date' that is unchecked, with buttons for 'Check for Updates' and 'Advanced...' settings visible." lightbox="../mac/media/mau-preferences/microsoft-autoupdate-status.large.png":::
 
-
 ## ExtendedLogging
 
 If set to TRUE, causes verbose logging to be output to MAU log file.
@@ -446,7 +441,6 @@ Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its fu
 | Manageable | | 
 | Comments | Deprecated |
 
-
 ## UpdateDeadline.ApplicationsForcedUpdateSchedule
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
@@ -475,7 +469,6 @@ Example:
     </dict>
 </dict>
 ```
-
 
 ## UpdateDeadline.DaysBeforeForcedQuit
 
@@ -510,6 +503,27 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 
 Here's an example of the prompt that displays.
 :::image type="content" source="../mac/media/mau-preferences/update-countdown-notice.large.png" alt-text="Close-up of a Microsoft AutoUpdate notification with a countdown timer set to 59 minutes and 53 seconds. The message states, 'Your admin has setup a deadline for the updates' and advises the user to save their data and close the following apps before the deadline, with the Microsoft Word icon shown. The button at the bottom reads 'Quit Apps and Update.'" lightbox="../mac/media/mau-preferences/update-countdown-notice.large.png":::
+
+## UpdateDeadline.ShowRemainingDaysAndHours
+ 
+Determines whether to show remaining days and hours instead of target date. 
+Available from MAU 4.78
+ 
+| Category | Details |
+| --- | --- |
+| Domain | com.microsoft.autoupdate2 |
+| Type | Boolean |
+| Default Value | FALSE |
+| Manageable | Yes |
+| Comments | When set to TRUE, displays the remaining days and hours. When set to FALSE, displays the target date. |
+ 
+Example of set to TRUE.
+ 
+:::image type="content" source="../mac/media/mau-preferences/mau-enforcing-update-countdown.png" alt-text="Screenshot showing a Microsoft AutoUpdate notification stating 'In 2 Days 4 Hours Your organization is enforcing app updates.' It instructs users to save data and quit Excel, OneNote, and Outlook apps before the indicated time, showing icons for each app along with 'Snooze' and 'Update' buttons.":::
+ 
+Example of set to FALSE.
+ 
+:::image type="content" source="../mac/media/mau-preferences/org-enforced-app-updates.png" alt-text="Screenshot showing a Microsoft AutoUpdate alert displaying the date 'Jan 9, 2025' and the message 'Your organization is enforcing app updates.' Instructions state 'You will need to save your data and quit the following apps before the time indicated,' with icons for Microsoft OneNote, Word, and Outlook shown below.":::
 
 ## UpdateDeadline.StartAutomaticUpdates
 
