@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: Learn about your options for managing Outlook data stored to a user profile disk.
-ms.date: 12/01/2023
+ms.date: 03/26/2025
 ---
 
 # Dealing with Outlook search in non-persistent RDS environments
@@ -19,10 +19,10 @@ ms.date: 12/01/2023
 
 A common issue customers face with their non-persistent (pooled) Remote Desktop Services environments is handling users' Outlook data. When Outlook is running in cached exchange mode, the .OST storing a user's Outlook data must follow the user as they roam from host to host. Windows Search Service indexes the .OST and creates an index catalog to enable search functionality in Outlook. In non-persistent RDS environments, the index catalog doesn't roam with user data and must be rebuilt every time the user signs into a new PC, which could potentially be every sign-on. Until the Windows Search Service finishes indexing the .OST, users get limited or incomplete search functionality. 
 
-According to a published report from [RDS Gurus](https://rdsgurus.com), [FSLogix](https://fslogix.com/) (a third party solution provider) has a solution that aims to solve this issue: [FSLogix’s Office 365 Container](https://fslogix.com/products/office-365-container) roams a user's Outlook data and their search index catalog, giving users access to their emails and enabling users to search in Outlook, even when they roam between sessions on different hosts within a collection.  
+FSLogix offers a solution that solves this issue: The FSLogix Office 365 Container roams a user's Outlook data and their search index catalog, giving users access to their emails and enabling users to search in Outlook, even when they roam between sessions on different hosts within a collection.  
 
-RDS Gurus performed testing on FSLogix's Office 365 Container, comparing it with RDS’s native User Profile Disk roaming solution. The test scenarios covered both on-premises and Azure RDS environments for non-persistent sessions on an RD session host (RDSH). Tests also included pooled VMs on RD virtualization host (RDVH), only for on-premises (RDVH isn't available in Azure). RDS Gurus primarily focused on the user experience when there are "noisy neighbors," or other users logged on to the same session host running similar workloads on the system. 
+When comparing FSLogix's Office 365 Container with RDS's native User Profile Disk (UPD) roaming solution, FSLogix provides significant benefits for Outlook search functionality. With UPD, search typically doesn't return results or returns incomplete results while Windows Search Service indexes the .OST. This indexing must occur each time a user connects to a new host in the collection.
 
-The performance counters collected in these tests revealed similar resource usage (CPU, RAM, network activity) with both UPD and FSLogix. The similarity in resource usage is because Windows Search Service throttles its CPU usage when indexing. When it comes to user experience, RDS Gurus found that FSLogix's Office 365 Container exceeds UPD in Outlook search functionality. In the UPD case, search doesn't return results or returns incomplete results as Windows Search Service indexes the .OST. Because FSLogix roams the index catalog, users see search results immediately. RDS Gurus observed a significant improvement in user experience when searching in Outlook in non-persistent RDS environments using FSLogix. 
+The key advantage of FSLogix's solution is that it roams the search index catalog along with the user data. This means users see search results immediately when they log in, without waiting for Windows Search Service to rebuild the index. The result is a consistent and responsive search experience in Outlook regardless of which host in the collection a user connects to.
 
-Read more about the results and conclusions on the [RDS Gurus blog](https://www.rdsgurus.com/outlook-performance-in-non-persistent-environments-using-fslogixs-office-365-containers/). 
+For more information about FSLogix, see [What is FSLogix?](/fslogix/overview-what-is-fslogix).
