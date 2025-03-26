@@ -523,7 +523,7 @@ Example of set to TRUE.
  
 Example of set to FALSE.
  
-:::image type="content" source="../mac/media/mau-preferences/org-enforced-app-updates.png" alt-text="Screenshot showing a Microsoft AutoUpdate alert with the date 'Jan 9, 2025' and the message 'Your organization is enforcing app updates.' Users are instructed to save their data and quit OneNote, Word, and Outlook before the deadline. 'Snooze' and 'Update' buttons are at the bottom.":::
+:::image type="content" source="../mac/media/mau-preferences/org-enforced-app-updates.png" alt-text="Screenshot showing a Microsoft AutoUpdate alert displaying the date 'Jan 9, 2025' and the message 'Your organization is enforcing app updates.' Instructions state 'You will need to save your data and quit the following apps before the time indicated,' with icons for Microsoft OneNote, Word, and Outlook shown below.":::
 
 ## UpdateDeadline.StartAutomaticUpdates
 
