@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
-ms.date: 03/19/2025
+ms.date: 03/26/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
@@ -57,7 +57,7 @@ If you don’t want Microsoft 365 companion apps to be installed automatically, 
 
 | Channel      | Date                   |
 | ------------ | ---------------------- |
-| Beta Channel | Rollout will begin on March 26, 2025|
+| Beta Channel | Rollout will begin on April 1, 2025|
 
 ## What do users see?
 
