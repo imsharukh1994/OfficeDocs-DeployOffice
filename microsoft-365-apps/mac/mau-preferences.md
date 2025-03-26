@@ -519,11 +519,11 @@ Available from MAU 4.78
  
 Example of set to TRUE.
  
-:::image type="content" source="../mac/media/mau-preferences/admin-update-deadline-daysremaining.large.png" alt-text="A Microsoft AutoUpdate alert that reads 'in 2 Days and 4 hours Your organization is enforcing app updates' Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons." lightbox="../mac/media/mau-preferences/admin-update-deadline-daysremaining.large.png"::: 
+:::image type="content" source="../mac/media/mau-preferences/mau-enforcing-update-countdown.png" alt-text="A Microsoft AutoUpdate notification stating 'In 2 Days 4 Hours Your organization is enforcing app updates.' It instructs users to save data and quit Excel, OneNote, and Outlook apps before the indicated time, showing icons for each app along with 'Snooze' and 'Update' buttons.":::
  
 Example of set to FALSE.
  
-:::image type="content" source="../mac/media/mau-preferences/admin-update-deadline-targetdate.large.png" alt-text="A Microsoft AutoUpdate alert that reads 'Jan 9, 2025 Your organization is enforcing app updates' Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons." lightbox="../mac/media/mau-preferences/admin-update-deadline-targetdate.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/org-enforced-app-updates.png" alt-text="A Microsoft AutoUpdate alert displaying the date 'Jan 9, 2025' and the message 'Your organization is enforcing app updates.' Instructions state 'You will need to save your data and quit the following apps before the time indicated,' with icons for Microsoft OneNote, Word, and Outlook shown below. 'Snooze' and 'Update' buttons are at the bottom.":::
 
 ## UpdateDeadline.StartAutomaticUpdates
 
