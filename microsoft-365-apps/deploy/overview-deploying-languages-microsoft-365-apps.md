@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
-ms.date: 03/14/2024
+ms.date: 04/01/2025
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps
@@ -21,7 +21,7 @@ The guidance in this article applies to the following Office products:
 
 - Microsoft 365 Apps for enterprise, which comes with many Office 365 and Microsoft 365 enterprise plans.
 - Microsoft 365 Apps for business, which comes with some Microsoft 365 business plans.
-- The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
+- The subscription version of the Project desktop app that comes with Planner and Project Plan 3 or Planner and Project Plan 5. 
 - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
 
 You can't use language resources for Windows Installer (MSI) versions of Office with Microsoft 365 Apps, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Microsoft 365 Apps.  

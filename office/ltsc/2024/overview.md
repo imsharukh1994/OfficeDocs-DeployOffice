@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office LTSC 2024."
-ms.date: 09/19/2024
+ms.date: 04/01/2025
 ---
 
 # Overview of Office LTSC 2024
@@ -134,7 +134,7 @@ For information about the new features in Office LTSC 2024, see the following ar
 
 Keep in mind that Office LTSC 2024 doesn't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan. Many business and enterprise plans include Microsoft 365 Apps. These plans also provide you with Microsoft 365, which includes the same apps as Office LTSC 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
-To continue receiving ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan. For more information on the available subscription options, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
+To continue receiving ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan such as Planner and Project Plan 3 or Planner and Project Plan 5. For more information on the available subscription options, see [Microsoft Planner plans and pricing](https://www.microsoft.com/microsoft-365/planner/microsoft-planner-plans-and-pricing) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 
 ## How do I upgrade to Office LTSC 2024?
 

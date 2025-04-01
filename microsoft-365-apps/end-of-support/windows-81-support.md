@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about the implications of Windows 8.1 end of support on Microsoft 365 Apps."
-ms.date: 09/19/2024
+ms.date: 04/01/2025
 ---
 
 # Windows 8.1 end of support and Microsoft 365 Apps
@@ -79,7 +79,7 @@ Other Microsoft resources are available to help you make the transition to using
 
 ## Additional information
 
-- The information in this article also applies to subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
+- The information in this article also applies to subscription versions of the Project and Visio desktop apps. For example, if you have Planner and Project Plan 5 or Visio Plan 2.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix (PDF)](https://aka.ms/windows-office-support-matrix).
 - To check the end of support date for a Microsoft product, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.

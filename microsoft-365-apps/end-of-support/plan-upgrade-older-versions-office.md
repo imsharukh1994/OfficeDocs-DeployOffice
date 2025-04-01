@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 11/11/2024
+ms.date: 04/01/2025
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -210,7 +210,7 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 
 If your organization uses Project or Visio, plan to upgrade these applications as well:
 
-- Subscription versions: Consider migrating to Visio Plan 2 or Project Plan 3/5, which are subscription-based and receive regular feature updates.
+- Subscription versions: Consider migrating to Visio Plan 2, Planner and Project Plan 3, or Planer and Project Plan 5, which are subscription-based and receive regular feature updates.
 - Volume licensed versions: If you prefer volume licensing, you can upgrade to Visio LTSC 2024 or Project 2024.
 
 Refer to:

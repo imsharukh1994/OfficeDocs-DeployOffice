@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office Long Term Service Channel 2021."
-ms.date: 09/19/2024
+ms.date: 04/01/2025
 ---
 
 # Overview of Office LTSC 2021
@@ -154,7 +154,7 @@ Office LTSC 2021 includes only some, but not all, features that are available in
 
 Office LTSC 2021 doesn't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
 
-To get ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan for those products. For more information, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
+To get ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan such as Planner and Project Plan 3 or Planner and Project Plan 5. For more information, see [Microsoft Planner plans and pricing](https://www.microsoft.com/microsoft-365/planner/microsoft-planner-plans-and-pricing) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 
 > [!NOTE]
 > The Teams client app included with Office LTSC 2021 will continue to receive new features. The update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).

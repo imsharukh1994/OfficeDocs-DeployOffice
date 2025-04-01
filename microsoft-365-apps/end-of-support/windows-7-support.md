@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 7 end of support on Microsoft 365 Apps."
-ms.date: 09/19/2024
+ms.date: 04/01/2025
 ---
 
 # Windows 7 end of support and Microsoft 365 Apps
@@ -83,7 +83,7 @@ Even if your version of Office is still supported, Windows 7 no longer receives 
 ## Additional information
 
 - This information also applies to the following products:
-  - The subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
+  - The subscription versions of the Project and Visio desktop apps. For example, if you have Planner and Project Plan 5 or Visio Plan 2.
   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix (PDF)](https://aka.ms/windows-office-support-matrix).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).
