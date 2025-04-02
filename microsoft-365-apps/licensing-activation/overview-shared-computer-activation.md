@@ -11,7 +11,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Microsoft 365 Apps with Remote Desktop Services (RDS) "
-ms.date: 05/20/2024
+ms.date: 04/01/2025
 ---
 
 # Overview of shared computer activation for Microsoft 365 Apps
@@ -39,7 +39,7 @@ Shared computer activation is required for scenarios where multiple users share 
 To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer activation is available for the following plans:
 
 - Any plan that includes Microsoft 365 Apps for enterprise. For example, Office 365 E3 or Microsoft 365 E5.
-- Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
+- Any plan that includes the desktop version of Project or Visio. For example, Planner and Project Plan 3 or Visio Plan 2.
 - The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business.
   
 > [!NOTE]
@@ -156,6 +156,7 @@ To configure licensing token roaming, you can use either the Office Deployment T
   >[!NOTE]
   > If you're using Microsoft Application Virtualization (App-V) to deploy Microsoft 365 Apps, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing. 
   
+
 
 
    
