@@ -65,7 +65,7 @@ If you use other tools, such as Microsoft Configuration Manager, to deploy softw
 > [!NOTE]
 > - Volume licensed versions of Project 2024 are available directly from the Office CDN.
 > - Volume licensed versions of Project 2024 are installed using Click-to-Run rather than Windows Installer (MSI).
-> - The Office Customization Tool (OCT) used for Windows Installer (MSI) versions of Project is not applicable for volume licensed versions of Project 2024.
+> - The Office Customization Tool (OCT) used for Windows Installer (MSI) versions of Project isn't applicable for volume licensed versions of Project 2024.
 
 ### Deploy a volume licensed version of Project 2021
 
