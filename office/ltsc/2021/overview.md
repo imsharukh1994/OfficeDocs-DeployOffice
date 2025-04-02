@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office Long Term Service Channel 2021."
-ms.date: 09/19/2024
+ms.date: 04/01/2025
 ---
 
 # Overview of Office LTSC 2021
@@ -18,7 +18,7 @@ ms.date: 09/19/2024
 Office Long Term Service Channel (LTSC) 2021 is an on-premises edition of Microsoft's core productivity apps, designed for use in disconnected or restricted environments. It's available to organizations through volume licensing agreements.
 
 > [!IMPORTANT]
-> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise to the users in your organization, you don't need Office LTSC 2021. Microsoft 365 Apps for enterprise already has all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
+> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you deployed Microsoft 365 Apps for enterprise to the users in your organization, you don't need Office LTSC 2021. Microsoft 365 Apps for enterprise already has all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
   
 Office LTSC 2021 is available for enterprise admins to download and deploy to the users in their organization. The following volume licensed Office products are available for devices running Windows:
 
@@ -54,7 +54,7 @@ The following policy settings are available when using Group Policy:
 These policy settings are located under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center in the Group Policy Management tool.
 
 > [!NOTE]
-> The “Allow the use of additional optional connected experiences in Office" policy setting is also available for Office LTSC 2021. But that's not considered a change because that policy setting is already available for volume licensed versions of Office 2019.
+> The "Allow the use of additional optional connected experiences in Office" policy setting is also available for Office LTSC 2021. However, this isn't considered a change because the policy setting is already available for volume licensed versions of Office 2019.
 
 For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2021, the information covered in the article about how the policy settings work does apply to Office LTSC 2021.
 
@@ -93,7 +93,7 @@ Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument
 
 #### Office Add-ins
 
-Several more Office Add-ins JavaScript APIs are available with Office LTSC 2021. These include the following requirement sets.
+Several more Office Add-ins JavaScript APIs are available with Office LTSC 2021, including the following requirement sets.
 
 - Product requirement sets:
    - Excel: Up to [1.12](/javascript/api/requirement-sets/excel/excel-api-1-12-requirement-set)
@@ -154,7 +154,7 @@ Office LTSC 2021 includes only some, but not all, features that are available in
 
 Office LTSC 2021 doesn't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
 
-To get ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan for those products. For more information, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
+To get ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan such as Planner and Project Plan 3 or Planner and Project Plan 5. For more information, see [Microsoft Planner plans and pricing](https://www.microsoft.com/microsoft-365/planner/microsoft-planner-plans-and-pricing) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 
 > [!NOTE]
 > The Teams client app included with Office LTSC 2021 will continue to receive new features. The update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
@@ -169,7 +169,7 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 - Access and Publisher aren't available for devices running macOS.
 - Office LTSC 2021 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - Office LTSC 2021 is available in both 32-bit and 64-bit versions. We recommend 64-bit on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
-- After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2021.
+- After you download the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2021.
 - LTSC stands for Long Term Servicing Channel.
 
 ## Related articles
