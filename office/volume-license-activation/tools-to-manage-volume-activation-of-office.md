@@ -183,7 +183,7 @@ These scenarios assume that you run ospp.vbs from an elevated command prompt.
 
 ## The slmgr.vbs script
 
-The Software License Manager (slmgr.vbs) script, located in the `Windows\system32` ffolder, configures and retrieves volume activation details for the Office KMS host and the Windows host. For more information, see [Configuring KMS Hosts](/previous-versions/tn-archive/ff793407(v=technet.10)) for Windows.
+The Software License Manager (slmgr.vbs) script, located in the `Windows\system32` folder, configures and retrieves volume activation details for the Office KMS host and the Windows host. For more information, see [Configuring KMS Hosts](/previous-versions/tn-archive/ff793407(v=technet.10)) for Windows.
   
 You can run the script locally on the target computer or remotely from another computer. You must use an administrator account to run the script. If a standard user runs slmgr.vbs, some license data might be missing or incorrect, and many operations become prohibited.
   
