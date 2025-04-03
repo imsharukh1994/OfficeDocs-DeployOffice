@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
-ms.date: 09/18/2024
+ms.date: 04/03/2025
 ---
 
 # Tools to manage volume activation of Office
@@ -225,7 +225,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (seven days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]
-> - Activation ID for Office LTSC 2024: 8D368FC1-9470-4BE2-8D66-90E836CBB051
+> - Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
 > - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
 > - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
 > - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
