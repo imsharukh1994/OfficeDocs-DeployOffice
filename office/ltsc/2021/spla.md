@@ -11,19 +11,19 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Microsoft Services Provider License Agreement (SPLA) customers with instructions for deploying Office LTSC 2021"
-ms.date: 09/18/2024
+ms.date: 04/07/2025
 ---
 
-# Office LTSC 2021 deployment instructions for SPLA customers
+# Office Long Term Service Channel (LTSC) 2021 deployment instructions for SPLA customers
 
 > [!IMPORTANT]
 > This information only applies to service providers and independent software vendors (ISVs) with a Microsoft Services Provider License Agreement (SPLA). For more information, see [Licensing options for service providers](https://www.microsoft.com/licensing/licensing-programs/spla-program).
 
-There are a few slight differences in how you, as a SPLA customer, deploy Office LTSC 2021 to devices running Windows or macOS.
+There are a few slight differences in how you, as an SPLA customer, deploy Office LTSC 2021 to devices running Windows or macOS.
 
 ## Office LTSC 2021 (for Windows)
 
-To download or install Office LTSC 2021 on devices running Windows, you can use the [Office Deployment Tool](/microsoft-365-apps/deploy/overview-office-deployment-tool) with an XML file that specifies configuration information. The following table shows you which value to use for the [ID attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#id-attribute-part-of-product-element) in that XML file.
+To download or install Office LTSC 2021 on Windows devices, use the [Office Deployment Tool](/microsoft-365-apps/deploy/overview-office-deployment-tool) with an XML file that includes your configuration settings. The following table shows the correct value to use for the [ID attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#id-attribute-part-of-product-element) in the XML file.
 
 |Office product |Product ID value  |
 |---------|---------|
@@ -37,7 +37,7 @@ These Office products don't include Microsoft Teams.
 
 To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../../volume-license-activation/activate-office-by-using-mak.md).
 
-Other than that, how you deploy and manage Office LTSC 2021 is no different than other customers. For more information, see [Overview of Office LTSC 2021](overview.md).
+Other than activation, deploying and managing Office LTSC 2021 works the same as it does for all other customers. For more information, see [Overview of Office LTSC 2021](overview.md).
 
 ## Office LTSC for Mac 2021
 
