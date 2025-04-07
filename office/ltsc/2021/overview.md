@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office Long Term Service Channel 2021."
-ms.date: 04/01/2025
+ms.date: 04/07/2025
 ---
 
 # Overview of Office LTSC 2021
@@ -54,7 +54,7 @@ The following policy settings are available when using Group Policy:
 These policy settings are located under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center in the Group Policy Management tool.
 
 > [!NOTE]
-> The "Allow the use of additional optional connected experiences in Office" policy setting is also available for Office LTSC 2021. However, this isn't considered a change because the policy setting is already available for volume licensed versions of Office 2019.
+> The "Allow the use of optional connected experiences in Office" policy setting is also available for Office LTSC 2021. However, this isn't a change because the policy setting is already available for volume licensed versions of Office 2019.
 
 For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2021, the information covered in the article about how the policy settings work does apply to Office LTSC 2021.
 
@@ -157,7 +157,7 @@ Office LTSC 2021 doesn't receive any new features. If you want to get new Office
 To get ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan such as Planner and Project Plan 3 or Planner and Project Plan 5. For more information, see [Microsoft Planner plans and pricing](https://www.microsoft.com/microsoft-365/planner/microsoft-planner-plans-and-pricing) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 
 > [!NOTE]
-> The Teams client app included with Office LTSC 2021 will continue to receive new features. The update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
+> The Teams client app included with Office LTSC 2021 continues to receive new features. The update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
 ## How do I upgrade to Office LTSC 2021?
 
