@@ -18881,7 +18881,8 @@ The event is triggered when users dismiss Google's payment checkout screen and s
 
 The following fields are collected:
 
-- **UserAction** - Indicates whether the dialog was displayed to the user and what action the user took in the dialog,
+- **UserAction** - Indicates whether the dialog was displayed to the user and what action the user took in the dialog.
+
 
 ### Office.Android.DocsUI.PaywallControl.AutoRenewData
 
