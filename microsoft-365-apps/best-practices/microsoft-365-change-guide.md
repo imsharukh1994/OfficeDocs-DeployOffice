@@ -311,17 +311,16 @@ Regardless of change strategy, ensuring that your users understand the latest ch
 
 ### Change classification and notification
 
-Microsoft classifies changes to assist customers in understanding and planning appropriately for each update. Major updates should be a key focus for customers evaluating and analyzing upcoming changes. If a change is classified as a major update, Microsoft commits to notifying customers at least 30 days before implementation when an action may be required.
+Microsoft classifies changes to assist customers in understanding and planning appropriately for each update. Major updates should be a key focus for customers evaluating and analyzing upcoming changes. Major updates can be reviewed by selecting **Major update** from the **Tags** drop-down in the Message center.
 
-To be classified as a **major update**, changes must meet one or more of the following criteria:
+Major updates are communicated at least 30 days in advance when an action is required and might include:
 
-- Changes to daily productivity such as inbox, meetings delegations, sharing, and access.
-- Changes to the themes, web parts, and other components that may impact customizations.
-- Increases or decreases to visible capacity such as storage, number of rules, items, or durations.
-- Rebranding that might cause user confusion or result in help desk/collateral changes or URL changes.
-- A new service or application.
-- Changes requiring an admin action (exclusive of prevent/fix).
-- Changes to where data is stored (might impact regulatory or legal requirements).
+- User impacting changes to daily productivity such as changing a user’s inbox, meetings, delegations, sharing and access that may result in help desk calls, or organizational conformance concerns.
+- Changes to the themes, web parts, deployed Copilot agents and other components that may impact customer customizations.
+- Increases or decreases to visible capacity such as storage, number of rules, Copilot agents and prompts, items, or durations.
+- Rebranding that may cause end-user confusion or result in help desk changes, collateral changes, or URL changes if the new URL is not *.cloud.microsoft
+- A new service or application deployed with default settings turned on.
+- Changes to where data is stored or accessed.
 
 The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗) - this helps them to be easy to identify and track during various stages of release. Figure 9 shows a screenshot.
 
