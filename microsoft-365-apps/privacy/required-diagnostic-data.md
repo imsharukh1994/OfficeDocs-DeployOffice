@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/13/2025
+ms.date: 04/14/2025
 ---
 
 # Required diagnostic data for Office
@@ -2500,6 +2500,8 @@ The following fields are collected:
 - **Days_Since_Last_Ad_Seen** - Days since last ad seen.
 
 - **Days_Since_Last_Ad_Seen_Excl_Focused** - Days since last ad seen, excluding ad placements in Focused inbox.
+
+- **from_source** - Indicates how the current app component was reached.
 
 - **is_ad_personalization_enabled** - indicates whether personalized ads are enabled.
 
@@ -10759,6 +10761,8 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened 
 
+- **Data_Doc_IsPrewarmed** - Indicates that the event occurred in an Instant Boot session. As part of an Instant Boot session, we run a prewarmed instance of the app in the background. So, when the user opens the app, the boot is very fast. This field indicates that we are in an Instant Boot session.
+
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer 
 
 - **Data_Doc_KnownFolderMoveStatus** - represents the signed-in user's known folder migration status in a given session.
@@ -11647,6 +11651,10 @@ The following fields are collected:
 - **notification_action** - To check if you have configured any notification actions for triaging emails to help us make sure this setting is working successfully 
 
 - **notification_action_number** - To check if your notification actions (action one or action two) are configured correctly
+
+- **prioritize_rule_action** - Indicates where user added, deleted, or edited a rule.
+
+- **prioritize_rule_type** - Indicates whether a user modified a high, low, or other type of rule priority setting.
 
 - **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better. Examples: Office365, Gmail, Outlook
 
@@ -12606,6 +12614,58 @@ The following fields are collected on iOS:
 - **Data_mediaCompressionFactor** - The factor by which images are compressed by app.
 
 - **Data_version** - Version of the SDK running in the app.
+
+#### Office.MobileMeasurementPartner.Launch
+
+The event is triggered when the application starts on mobile devices (iOS and Android) and collected system metadata will be employed to assess product performance across various installation sources to ensure Office from such install sources works as expected. 
+
+The following fields are collected:
+
+- **a** - Singular SDK Key. The Mobile Measurement Partner.
+
+- **aifa** - For Android apps only: Lower-case raw advertising ID with dashes.​
+
+- **app_v​** - The application version.
+
+- **asid​** - The App Set ID.
+
+- **att_authorization_status​** - The App Transparency authorization status.​
+
+- **attribution_token​** - For iOS apps only: Apple Search Ads attribution token​.
+
+- **bd​** - The operating System version of the device.
+
+- **c​** - For iOS apps only: it specifies the network connection type.
+
+- **country​** - Country code of the device at the time of the session start.
+
+- **data_sharing_options​** - Flag that indicates user's consent to share additional information.
+
+- **i** - Package Name (Android) or Bundle ID (iOS) of the application.​
+
+- **idfa​** - For iOS apps only: Upper-case raw advertising ID with dashes.​
+
+- **idfv​** - For iOS apps only: Upper-case raw IdentifierForVendor with dashes.​
+
+- **install_receipt​** - For iOS apps only: The receipt received from the Apple App Store.
+
+- **install_ref​** - For Android apps only: Install Referrer Information​ from Google Play Store.
+
+- **install_source​** - For Android apps only: Install source package name. 
+
+- **install_time​** - The time of the first app install. ​
+
+- **lc​** - The locale tag for the device indicating language and country code.​
+
+- **ma​** - Make of the device hardware.
+
+- **mo​** - Model of the device hardware.
+
+- **n** - Represents the name of the app launched.
+
+- **p** - One of the following Platforms: Android or iOS​
+
+- **ve** - Operating system version of the device at session start.​
 
 
 #### Office.OfficeMobile.AppActivation.Launch

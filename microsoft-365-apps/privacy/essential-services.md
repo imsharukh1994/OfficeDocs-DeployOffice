@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/13/2025
+ms.date: 04/14/2025
 ---
 
 # Essential services for Office
@@ -4700,6 +4700,8 @@ Critical Usage telemetry for when Paywall control is shown to the user. Used to 
 
 The following fields are collected:
 
+- **CampaignID** - Campaign ID for the subscription screen shown. Campaign ID is decided based on the purchase entry-point, app, device type.
+
 - **EventDate** – Timestamp of the event occurrence 
 
 - **IsModeFRE** – Boolean to indicate experience type, Upsell dialog or SKU Chooser *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -5015,6 +5017,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product the request was made for
    - **status** - String – Success or Failure, indicating if the request succeeded or failed
+   - **TransactionId** - Current Apple Transaction Id for the purchase. Current and Original Transaction Id might be different for some scenarios like Offer redemption.
 
 
 - **Office.iOS.Paywall.PurchaseCompleteScreen.Shown** - To log how many users have failed to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow) and Activation API (Licensing flow) and see the success screen. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
@@ -5092,6 +5095,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **jumpScrollInteracted** - Bool - If user clicked on the jumping scroll down button to navigate to comparison table.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **scrollDepth** - Double - Scroll depth throughout the current session of paywall.
+   - **studentOfferButtonTap** - Indicates whether user clicked on the button to view the student discount offer screen.
    - **userDuration** - Double – Duration in milliseconds the user spent on the SKU chooser.
    - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.  
 
@@ -5124,6 +5128,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
    - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”, "Restore"
    - **status** - String – Success or Failure, indicating success or failure of the request.
+   - **TransactionId** - Current Apple Transaction Id for the purchase. Current and Original Transaction Id might be different for some scenarios like Offer redemption.
    - **trialInfo** - String: Bool - Captures trial info of all the products fetched from App Store. This will be empty if trial info fetching fails.
 
 
@@ -5136,6 +5141,35 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **provisioningAPICalled** – Indicates whether the provisioning API was called for this transaction.
    - **status** - String – To know the response during of this restore process (successful, failed, or unexpected)
    - **transactionId** –Transaction ID of the transaction that user tried to restore.
+
+- **Office.iOS.Paywall.StudentOfferIneligibleScreen.Stats** - This event is triggered when a user lands on the student offer’s ineligible screen after trying to verify themselves. The data collected helps understand the reasons why a user is ineligible for the student discount post a student verification attempt. This data would help identify unfair rejections due to backend system faults and help further improve the experience.
+
+   The following fields are collected:
+
+   - **exitReason** - Indicates the reason why the user exited the Student Ineligible screen, either to close the paywall control or to buy product.
+   - **PaywallSessionId** - Unique identifier of a Paywall session in an app session.
+   - **productId** - App Store ID of the product for which the user is viewing all benefits offered.
+
+- **Office.iOS.Paywall.StudentOfferScreen.Stats** - This event is triggered when a user visits the student discount offer screen after clicking the "Student offer" button in the main subscription screen. Data will be used to monitor the performance of various clickable elements and ensure correct product is being offered. All this data would help navigate to the root cause in case of failures and help to optimize the end user experience further.
+
+   The following fields are collected:
+
+   - **exitReason** - Exit reason of student offer screen to know if user exits to previous screen via Back button or continues with student verification to the next screen.
+   - **PaywallSessionId**- Collected to uniquely identify a Paywall session in an app session.
+   - **productId** - Apple subscription product ID of the student discounted product for which user is viewing all benefits offered.
+
+- **Office.iOS.Paywall.StudentVerificationScreen.Stats** - This event is triggered when a user visits the student verification screen. The data collected helps monitor fraud, error, and safe status codes post a verification attempt of the user. It also helps in early detection of security risks and root cause analysis in case of unfair rejection with certain verification methods.
+
+   The following fields are collected:
+
+   - **academicVerificationStatusCode** - Data would help monitor fraud, error, and safe academic verification status codes post a verification attempt of the user.
+   - **backButtonTap** - Indicates if the back button was tapped to exit the verification screen.
+   - **isUserRisk** - Indicates if the user is failing or passing the risk checks to help in early detection of security risks.
+   - **isVerifiedStudentSameAsAppUser** - Indicates if the verified student user is the same as the app user to help in detecting fraudulent verification to claim discount by using another account.
+   - **PaywallSessionId** - Unique identifier of a Paywall session in an app session.
+   - **refreshButtonTap** - Indicates if the refresh button was tapped to reload the verification screen.
+   - **studentVerificationMethod** - Data would help us do root cause analysis in case of unfair rejection with certain verification methods
+
 
 
 - **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
@@ -18841,6 +18875,14 @@ The following fields are collected:
 
 - **source** - The origin of an action. For example, initiated from the user, automatically by the client, etc.
 
+### Office.Android.DocsUI.PaywallControl.AbandonPurchaseAlertEvent
+
+The event is triggered when users dismiss Google's payment checkout screen and see the payment abandon dialogue. The data is used to ensure the dialog is working as expected and helps navigate the end-to-end flows in order to identify root cause of any potential errors. 
+
+The following fields are collected:
+
+- **UserAction** - 0, 1 and 2 where: 0 Indicates that the dialog was displayed to the user; 1 indicates user clicked "Yes" confirming to abandon their purchase; and 2 indicates user clicked "Cancel" to continue finishing the purchase.
+
 ### Office.Android.DocsUI.PaywallControl.AutoRenewData
 
 This event is triggered when the user lands on the Subscription Auto Renew Reminder screen. The data is needed to ensure that the experience for auto renew reminder is working as expected and to ensure end to end service reliability.
@@ -18884,6 +18926,14 @@ The following fields are collected:
 - **EventDate** - Timestamp of the event occurrence 
 
 - **SessionID** - GUID to connect events by session
+
+### Office.Android.DocsUI.PaywallControl.IrisPushNotificationClicked
+
+This event is triggered when a user activates the app by clicking on different types of push notifications through Microsoft server, and app may or may not be in session. This data is used to identify push notifications that activated the app and measure app activation through different push notifications.
+
+The following fields are collected:
+
+- **creativeId** - CreativeId from the campaign created for different types of notifications. This identifier is used to differentiate different types of Push notifications as different types of Push notifications will have different CreativeId.
 
 
 ### Office.Android.DocsUI.PaywallControl.NoNetworkWhilePurchaseEntrypointClicked
