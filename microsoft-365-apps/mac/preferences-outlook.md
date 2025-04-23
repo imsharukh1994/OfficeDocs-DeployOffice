@@ -62,6 +62,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable setting someone as a delegate](#disable-setting-someone-as-a-delegate)
 - [Prevent users from sharing any mail folder with other users](#disable-sharing-of-mail-folders)
 - [Disable signatures](#disable-signatures)
+- [Disable default signature](#disable-default-signature)
 - [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
 - [Disable S/MIME](#disable-smime)
 - [Disable Teams online meetings](#disable-teams-online-meetings)
@@ -443,6 +444,20 @@ Prevent users from being able to create, edit, and add client-side signatures.
 |Possible values|  false (default) <br/> true  |
 |Requires Configuration Profile| Yes |
 |Availability|16.18 |
+
+### Disable default signature
+
+Prevent Outlook from being able to use the default signature.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|DisableDefaultAppSignature  |
+|Data Type| Boolean|
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|16.92 |
+|Comments|This will keep the default Outlook signature but disable the settings to apply the default Outlook signatures for new messages and for reply/forward message settings.
 
 ### Specify calendar first day of week 
 
