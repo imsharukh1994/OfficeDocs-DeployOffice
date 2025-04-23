@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
-ms.date: 02/25/2025
+ms.date: 04/23/2025
 ---
 
 # Set preferences for Outlook for Mac
