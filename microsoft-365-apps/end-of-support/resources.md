@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with resources related to end of support for Office."
-ms.date: 09/19/2024
+ms.date: 04/24/2025
 ---
 
 # End of support resources for Office
@@ -25,8 +25,15 @@ The following table shows upcoming end of support events that affect Office that
 
 |End of support event  |Date |More information|
 |---------|---------|---------|
+|Microsoft 365 Apps on Windows 10|October 14, 2025 |[Windows 10 end of support and Microsoft 365 Apps](windows-10-support.md)|
 |Office 2019|October 14, 2025 |[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md)|
 |Office 2016|October 14, 2025 |[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md)|
+|Project 2016|October 14, 2025 |[What you need to know about Project 2016 end of support](https://techcommunity.microsoft.com/blog/projectblog/everything-you-should-know-about-project-2016-and-project-2019-end-of-support/4268794)|
+|Project 2019|October 14, 2025 |[What you need to know about Project 2019 end of support](https://techcommunity.microsoft.com/blog/projectblog/everything-you-should-know-about-project-2016-and-project-2019-end-of-support/4268794)|
+|Visio 2016|October 14, 2025 |[What you need to know about Visio 2016 end of support](https://techcommunity.microsoft.com/blog/microsoft_365blog/everything-you-should-know-about-visio-2016-and-visio-2019-end-of-support/4265894)|
+|Visio 2019|October 14, 2025 |[What you need to know about Visio 2019 end of support](https://techcommunity.microsoft.com/blog/microsoft_365blog/everything-you-should-know-about-visio-2016-and-visio-2019-end-of-support/4265894)|
+|Microsoft 365 Apps on Windows Server 2016|October 14, 2025 |[Windows Server end of support and Microsoft 365 Apps](windows-server-support.md#windows-server-2016)|
+|Microsoft 365 Apps on Windows Server 2019|October 14, 2025 |[Windows Server end of support and Microsoft 365 Apps](windows-server-support.md#windows-server-2019)|
 
 ## Past end of support events
 

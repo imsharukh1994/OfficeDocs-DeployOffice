@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins using Microsoft 365 Apps with information about which versions of Windows Server are supported."
-ms.date: 04/01/2025
+ms.date: 04/24/2025
 ---
 
 # Windows Server end of support and Microsoft 365 Apps
@@ -48,7 +48,7 @@ For recommendations on other client hosting solutions, see [Microsoft 365 Apps m
 Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
 
 > [!NOTE]
-> In the interest of maintaining security while customers complete their migrations to a supported operating system, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2019 for a total of three years, ending on October 10, 2028. 
+> In the interest of maintaining security while customers complete their migrations to a supported configuration, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2019 for a total of three years, ending on October 10, 2028. 
 > 
 > For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
 
@@ -61,7 +61,7 @@ For recommendations on other client hosting solutions, see [Microsoft 365 Apps m
 Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
 
 > [!NOTE]
-> In the interest of maintaining security while customers complete their migrations to a supported operating system, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2016 for a total of three years, ending on October 10, 2028. 
+> In the interest of maintaining security while customers complete their migrations to a supported configuration, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2016 for a total of three years, ending on October 10, 2028. 
 > 
 > For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
 
