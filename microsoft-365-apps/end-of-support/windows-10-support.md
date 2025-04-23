@@ -26,12 +26,10 @@ To help maintain security while you transition to Windows 11, Microsoft will con
 
 ## Customer support expectations after Windows 10 end of support
 
-Customer Service and Support limitations for support incidents created for Microsoft 365 Apps subscriptions after Windows 10 end support on October 14, 2025.
-
-1. Support incidents are and will be accepted for valid Microsoft 365 subscriptions.
-2. If the issue raised only occurs with Microsoft 365 Apps on Windows 10 (with or without Windows 10 Extended Security Updates) but doesn't occur on Windows 11, the customer will be asked to migrate to Windows 11.
-3. Support provides best-effort troubleshooting. Technical workarounds might be limited or not possible for unsupported configurations.
-4. Support incidents on unsupported configurations (including Extended Security Updates) don't include the option to engage Microsoft product development resources.
+Customers with a valid Microsoft 365 subscription will continue to be able to open support cases with Microsoft. However, the following limitations to customer service and support will apply to incidents involving Microsoft 365 Apps running on Windows 10 after October 14, 2025:
+1. If the issue occurs only with Microsoft 365 Apps on Windows 10, with or without Windows 10 Extended Security Updates, and doesn't occur on Windows 11, support will ask the customer to move to Windows 11.
+2. If the customer is unable to move to Windows 11, support will provide troubleshooting assistance only; technical workarounds might be limited or unavailable.
+3. Support incidents for Microsoft 365 Apps running on Windows 10, with or without Extended Security Updates, do not include the option to log a bug or request other product updates.
 
 ## Additional information
 
