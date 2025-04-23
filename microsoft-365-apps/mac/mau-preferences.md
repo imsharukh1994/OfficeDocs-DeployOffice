@@ -12,7 +12,7 @@ ms.collection: Tier2
 recommendations: false 
 ai-usage: ai-assisted
 description: Learn how to use preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise to meet the needs of various users.
-ms.date: 03/26/2025 
+ms.date: 04/22/2025 
 ---  
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
@@ -100,7 +100,7 @@ You can specify a ChannelName for each app by adding a ChannelName key and value
 
 ## ManifestServer
 
-The ManifestServer is the URL for the server hosting update manifests. MAU downloads update manifests from this location when ChannelName is set to Custom.
+The ManifestServer is the URL for the server hosting update manifests. Applies to managed device configurations only. Local configurations of this setting are ignored. MAU downloads update manifests from this location when ChannelName is set to Custom.
 
 | Category | Details |
 | --- | --- |
@@ -108,7 +108,7 @@ The ManifestServer is the URL for the server hosting update manifests. MAU downl
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: ``https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/`` <br>Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with 4090&lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
+| Comments | Must point to a valid URL hosting update manifest files. Specifying a local folder will be ignored. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: ``https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/`` <br>Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with 4090&lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
 
 ## UpdateCache
 
