@@ -96,7 +96,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
     
 - **Guidelines:** Most organizations enable this setting, which is the recommended configuration. Organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically don't enable this setting. 
     
-**Improve Proofing Tools** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools\Options\Spelling. 
+**Improve Proofing Tools** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools\Options\Spelling\Proofing Data Collection. 
   
 - **Description:** This setting controls whether the Help Improve Proofing Tools feature sends usage data to Microsoft. The Help Improve Proofing Tools feature collects data about how users use the proofing tools, such as additions to the custom dictionary, and sends the data to Microsoft. After about six months, the feature stops sending data to Microsoft and deletes the data collection file from the user's computer. By default, this feature is enabled if users choose to participate in the Customer Experience Improvement Program (CEIP). 
     
