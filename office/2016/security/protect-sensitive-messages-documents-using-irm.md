@@ -10,10 +10,12 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Information Rights Management (IRM) in Office to specify permission for accessing and using sensitive documents and messages."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 ---
 
 # Protect sensitive messages and documents by using Information Rights Management (IRM) in Office 2016
+
+[!INCLUDE [Office 2016 end of support notification](../../includes/office-2016-eos.md)]
 
  **Summary:** Use Information Rights Management (IRM) in Office 2016 to specify permission for accessing and using sensitive documents and messages. 
   

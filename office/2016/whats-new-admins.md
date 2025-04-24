@@ -10,10 +10,12 @@ ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Tier2
 description: "Provides IT admins with an overview of the new features and capabilities in Office 2016."
-ms.date: 09/19/2024
+ms.date: 04/24/2025
 ---
 
 # What's new for admins in Office 2016
+
+[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
 
  **Summary:** Provides IT admins with an overview of the new features and capabilities in Office 2016. 
   

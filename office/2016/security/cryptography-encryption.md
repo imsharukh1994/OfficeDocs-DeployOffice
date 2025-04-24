@@ -10,10 +10,12 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains the settings that you can use to encrypt data in Office, and provides information about compatibility with previous versions of Office."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 ---
 
 # Cryptography and encryption in Office 2016
+
+[!INCLUDE [Office 2016 end of support notification](../../includes/office-2016-eos.md)]
 
 Office 2016 offers encryption settings to enhance data security. These settings are available in several applications, including Access 2016, Excel 2016, OneNote 2016, PowerPoint 2016, Project 2016, and Word 2016.
   
