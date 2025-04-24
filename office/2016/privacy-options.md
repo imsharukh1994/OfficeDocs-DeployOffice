@@ -3,7 +3,7 @@ title: "Privacy options in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: office-perpetual-itpro
 ms.collection: 
 - privacy-office
@@ -11,16 +11,16 @@ ms.collection:
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Office privacy settings let you control the disclosure of private information."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 hideEdit: true
 ---
 
 # Privacy options in Office 2016
 
- **Summary**: Explains how Office 2016 privacy settings let you control the disclosure of private information. 
+This article explains how Office 2016 privacy settings let you control the disclosure of private information.
   
   
-The **Welcome to Office** experience lets users enable or disable several Internet-based services that help protect and improve Office 2016 applications. For more information about the **Welcome to Office** experience, see the [Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043).
+The **Welcome to Office** experience lets users enable or disable several Internet-based services that help protect and improve Office 2016 applications.
  
 <a name="about"> </a>
 
@@ -32,17 +32,17 @@ If users choose to **Install important and recommended updates for Office and ot
   
 - Recommended and important updates are automatically installed for the operating system and Office 2016 applications. Users are notified about new optional software.
     
-- Applications can connect to support.office.com for updated Help content and can receive targeted Help content for the Office 2016 applications that are installed.
+- Applications can connect to support.microsoft.com for updated Help content and can receive targeted Help content for the Office 2016 applications that are installed.
     
 - Applications can periodically download small files that help determine system problems and prompt users to send error reports to Microsoft. 
     
-- Users can sign up for the Customer Experience Improvement Program or the Office Personalized Experience Program (OPEP), depending on the SKU they have installed. For more information about OPEP, see the [Microsoft Office Personalized Experience Program](https://go.microsoft.com/fwlink/p/?LinkId=282045).
+- Users can sign up for the Customer Experience Improvement Program or the Office Personalized Experience Program (OPEP), depending on the SKU they have installed.
     
 If users choose **Install Updates Only**, recommended and important updates are automatically installed for the operating system and Office 2016 applications. Users are notified about new optional software, but, privacy options aren't changed in Office 2016 applications. This means that the default privacy options take effect. If users choose **Don't Make Changes**, automatic updating isn't changed in the Windows Security Center and privacy options aren't changed in Office 2016. The default privacy options take effect.
   
 The default privacy options for Office 2016 applications are as follows:
   
-- Office 2016 applications don't connect to support.office.com for updated Help content and Office applications aren't detected on users' computers. Users won't experience optimal results when they search for Help.
+- Office 2016 applications don't connect to support.microsoft.com for updated Help content and Office applications aren't detected on users' computers. Users won't experience optimal results when they search for Help.
     
 - Office 2016 applications don't download small programs that help diagnose problems and error message information isn't sent to Microsoft.
     
@@ -56,7 +56,7 @@ Because the **Welcome to Office** experience lets users enable or disable severa
 
 You can suppress the **Welcome to Office** experience by enabling the **Suppress recommended settings dialog** setting. This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. This setting prevents the **Welcome to Office** experience from appearing the first time that a user starts Office 2016. If you enable this setting, the automatic updating feature remains unchanged and the privacy options that control Internet-based services aren't enabled. 
   
-If you suppress the **Welcome to Office** experience without enabling certain privacy options, you disable several features that improve Office 2016 applications and you could expose a computer to security threats. Therefore, if you enable this setting we recommend that you also enable all the privacy options that are discussed in [Configure privacy options in Office](privacy-options.md#privacyoptions).
+If you suppress the **Welcome to Office** experience without enabling certain privacy options, you disable several features that improve Office 2016 applications and you could expose a computer to security threats. Therefore, if you enable this setting we recommend that you also enable all the privacy options that are discussed in [Configure privacy options in Office](#configure-privacy-options-in-office).
   
 Most organizations enable this setting, including organizations that have a highly restrictive security environment or a security environment that restricts Internet access.
   
@@ -68,15 +68,15 @@ Office 2016 provides several settings that let you control the disclosure of pri
   
 **Online content options** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\ Tools | Options | General | Service Options… \ Online Content. 
   
-- **Description:** This setting controls whether the Office 2016 Help system can download Help content from support.office.com. You can choose one of three options for this setting: 
+- **Description:** This setting controls whether the Office 2016 Help system can download Help content from support.microsoft.com. You can choose one of three options for this setting: 
     
-  - **Never show online content or entry points** The Help system doesn't connect to support.office.com to download content. This is the default setting if you suppress the **Welcome to Office** experience or if users select **Don't make changes** or **Install Updates Only**. 
+  - **Never show online content or entry points** The Help system doesn't connect to support.microsoft.com to download content. This is the default setting if you suppress the **Welcome to Office** experience or if users select **Don't make changes** or **Install Updates Only**. 
     
-  - **Search only offline content whenever available** The Help system doesn't connect to support.office.com to download content. 
+  - **Search only offline content whenever available** The Help system doesn't connect to support.microsoft.com to download content. 
     
-  - **Search online content whenever available** The Help system connects to support.office.com for content when the computer is connected to the Internet. 
+  - **Search online content whenever available** The Help system connects to support.microsoft.com for content when the computer is connected to the Internet. 
     
-- **Impact:** If you enable this setting and select **Never show online content or entry points** or **Search only offline content whenever available**, users can't access updated Help articles through the Help system and you can't get templates from support.office.com.
+- **Impact:** If you enable this setting and select **Never show online content or entry points** or **Search only offline content whenever available**, users can't access updated Help articles through the Help system and you can't get templates from support.microsoft.com.
     
 - **Guidelines:** Most organizations enable this setting and select **Search online content when available**. This is the recommended configuration for this setting. But, organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically enable this setting and select **Never show online content or entry points**.
     
@@ -96,7 +96,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
     
 - **Guidelines:** Most organizations enable this setting, which is the recommended configuration. Organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically don't enable this setting. 
     
-**Improve Proofing Tools** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools\Options\Spelling. 
+**Improve Proofing Tools** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools\Options\Spelling\Proofing Data Collection. 
   
 - **Description:** This setting controls whether the Help Improve Proofing Tools feature sends usage data to Microsoft. The Help Improve Proofing Tools feature collects data about how users use the proofing tools, such as additions to the custom dictionary, and sends the data to Microsoft. After about six months, the feature stops sending data to Microsoft and deletes the data collection file from the user's computer. By default, this feature is enabled if users choose to participate in the Customer Experience Improvement Program (CEIP). 
     
@@ -122,6 +122,5 @@ Several other settings are related to privacy disclosure in Office 2016 applicat
     
 - **Prevent document inspectors from running** This setting lets you disable Document Inspector modules. Document Inspector modules, available in various Office applications since Office 2007, allows users to remove hidden and personal information from their Office documents. 
     
-## Related articles
-[Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043)
-
+## Related information
+[Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement)
