@@ -6,12 +6,14 @@ items:
 
   - name: Microsoft 365 Apps
     items:
-      - name: Windows 7
-        href: windows-7-support.md
-      - name: Windows 8
-        href: windows-8-support.md
+      - name: Windows 10
+        href: windows-10-support.md
       - name: Windows 8.1
         href: windows-81-support.md
+      - name: Windows 8
+        href: windows-8-support.md
+      - name: Windows 7
+        href: windows-7-support.md
       - name: Windows Server
         href: windows-server-support.md
       - name: Migration from Windows Server
