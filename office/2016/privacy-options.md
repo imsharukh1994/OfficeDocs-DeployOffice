@@ -17,6 +17,8 @@ hideEdit: true
 
 # Privacy options in Office 2016
 
+[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
+
 This article explains how Office 2016 privacy settings let you control the disclosure of private information.
   
   
