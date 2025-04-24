@@ -9,12 +9,13 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides IT admins with information on how to update Office 2019."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 ---
 
 # Update Office 2019 (for IT Pros)
- 
-  
+
+[!INCLUDE [Office 2019 end of support notification](../includes/office-2019-eos.md)]
+
 After you deploy volume licensed versions of Office 2019, including Project and Visio, you’ll want to keep it updated because Microsoft releases security updates and quality updates, such as updates that provide stability or performance improvements for Office. Office 2019 is updated approximately once a month, usually on the second Tuesday of the month. 
 
 > [!NOTE]
