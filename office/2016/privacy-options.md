@@ -3,7 +3,7 @@ title: "Privacy options in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: office-perpetual-itpro
 ms.collection: 
 - privacy-office
@@ -11,7 +11,7 @@ ms.collection:
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Office privacy settings let you control the disclosure of private information."
-ms.date: 04/23/2025
+ms.date: 04/24/2025
 hideEdit: true
 ---
 
