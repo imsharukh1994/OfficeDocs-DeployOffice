@@ -10,10 +10,12 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how you can prevent file format attacks using file validation in Office."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 ---
 
 # Prevent file format attacks by using Office file validation in Office 2016
+
+[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
 
  **Summary:** Explains how you can prevent file format attacks using file validation in Office 2016. 
   

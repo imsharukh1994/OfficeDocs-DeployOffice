@@ -10,10 +10,12 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes Office authentication, sign in types, and how to use registry settings to determine which user identities are offered at user sign in."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 ---
 
 # Identity, authentication, and authorization in Office 2016
+
+[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
 
  **Summary:** Describes Office 2016 authentication, sign in types, and how to use registry settings to determine which user identities are offered at user sign in. 
   
@@ -144,4 +146,4 @@ When a user logs into an Office app using either their Microsoft account ID or t
 2. Choose the Office profile that you want to delete, and then choose **Delete**.
     
 3. From the Identity hive, navigate to the Profiles node, choose that same identity, open the shortcut menu (right-click), and then choose **Delete**.
-    
+

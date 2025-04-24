@@ -10,10 +10,12 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office."
-ms.date: 04/19/2024
+ms.date: 04/24/2025
 ---
 
 # Plan security settings for VBA macros in Office 2016
+
+[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
 
  **Summary:** Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office 2016. 
   
@@ -190,6 +192,6 @@ Two other settings affect how VBA macros behave in Office 2016 applications. If 
   
 **Group Policy setting name:** Disable all Trust Bar notifications for security issues 
   
-- **Description:** This setting prevents users from seeing Message Bar warnings, such as warnings about unsafe VBA macros. This global setting applies to Excel 2016, PowerPoint 2016, and Word 2016. You can't configure this setting on a per-application basis. 
-  
+- **Description:** This setting prevents users from seeing Message Bar warnings, such as warnings about unsafe VBA macros. This global setting applies to Excel 2016, PowerPoint 2016, and Word 2016. You can't configure this setting on a per-application basis.
+
 
