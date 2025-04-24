@@ -15,7 +15,7 @@ ms.date: 04/24/2025
 
 # Plan security settings for VBA macros in Office 2016
 
-[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
+[!INCLUDE [Office 2016 end of support notification](../../includes/office-2016-eos.md)]
 
  **Summary:** Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office 2016. 
   

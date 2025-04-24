@@ -15,7 +15,7 @@ ms.date: 04/24/2025
 
 # Digital signatures in Office 2016
 
-[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
+[!INCLUDE [Office 2016 end of support notification](../../includes/office-2016-eos.md)]
 
  **Summary:** Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents. Additionally, determine how to select the appropriate certificates for your deployment. 
   

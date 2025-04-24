@@ -15,7 +15,7 @@ ms.date: 04/24/2025
 
 # Block specific file format types in Office 2016
 
-[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
+[!INCLUDE [Office 2016 end of support notification](../../includes/office-2016-eos.md)]
 
  **Summary:** Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users. 
 

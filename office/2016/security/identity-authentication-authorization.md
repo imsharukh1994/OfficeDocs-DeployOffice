@@ -15,7 +15,7 @@ ms.date: 04/24/2025
 
 # Identity, authentication, and authorization in Office 2016
 
-[!INCLUDE [Office 2016 end of support notification](../includes/office-2016-eos.md)]
+[!INCLUDE [Office 2016 end of support notification](../../includes/office-2016-eos.md)]
 
  **Summary:** Describes Office 2016 authentication, sign in types, and how to use registry settings to determine which user identities are offered at user sign in. 
   
