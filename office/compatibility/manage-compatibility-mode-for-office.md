@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # Manage compatibility mode for Office
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 ***Applies to:*** *Office 2019, Office 2016*
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 Office automatically uses compatibility mode to open Word, Excel, and PowerPoint documents created in earlier versions of these apps. Compatibility mode makes sure users don't see new or improved features in Office while working with a document. This way, people using earlier versions of Office can fully edit the document. Compatibility mode also keeps the document's layout the same.
   

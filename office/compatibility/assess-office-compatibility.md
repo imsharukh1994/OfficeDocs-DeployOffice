@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # Assess Office compatibility
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 ***Applies to:*** *Office 2019, Office 2016*
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
