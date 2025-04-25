@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 11/01/2024
+ms.date: 04/25/2025
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office
 
-***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
+
+[!INCLUDE [applies-to](../includes/applies-to.md)]
 
 To activate volume licensed versions of Office, including Project, and Visio, you must have a Key Management Service (KMS) host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 

@@ -11,12 +11,14 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: Lists the Generic Volume License Keys (GVLKs) used to activate volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 
-ms.date: 09/18/2024
+ms.date: 04/25/2025
 ---
 
 # GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
+
+[!INCLUDE [applies-to](../includes/applies-to.md)]
 
 By default, volume licensed versions of Office, such as Office LTSC 2024, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
 

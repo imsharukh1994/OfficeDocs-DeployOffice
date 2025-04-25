@@ -9,10 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
-ms.date: 05/20/2024
+ms.date: 04/25/2025
 ---
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 ***Applies to:*** *Office 2019, Office 2016*
 

@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information on how to troubleshoot common errors for KMS or MAK-based activation of Office."
-ms.date: 04/28/2023
+ms.date: 04/25/2025
 ---
 
 # Troubleshoot volume activation of Office
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
+
+[!INCLUDE [applies-to](../includes/applies-to.md)]
 
 
 Setting up volume activation of Office, including Project and Visio, by using Key Management Service (KMS) or Multiple Activation Key (MAK) can be challenging. Use these steps to troubleshoot the most common issues.

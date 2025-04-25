@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Active Directory to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 09/19/2024
+ms.date: 04/25/2025
 ---
 
 # Activate volume licensed versions of Office by using Active Directory
 
-***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
+
+[!INCLUDE [applies-to](../includes/applies-to.md)]
   
 Active Directory-based activation enables an organization to activate volume licensed versions of Office, including Project and Visio, on computers that are joined to an Active Directory domain. Active Directory-based activation is implemented as a role service on Windows Server and relies on Active Directory Domain Services to store an activation object. For more information, see [Activate using Active Directory-based activation](/windows/deployment/volume-activation/activate-using-active-directory-based-activation-client).
 

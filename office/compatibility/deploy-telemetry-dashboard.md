@@ -9,10 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Explains how to deploy the processor, agent, and other components that are required by Office Telemetry Dashboard."
-ms.date: 03/01/2023
+ms.date: 04/25/2025
 ---
 
 # Deploy Office Telemetry Dashboard
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 ***Applies to:*** *Office 2019, Office 2016*
 

@@ -9,10 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Describes how to improve Office performance by managing add-ins by using Office Telemetry Dashboard."
-ms.date: 05/21/2024
+ms.date: 04/25/2025
 ---
 
 # Manage add-ins by using Office Telemetry Dashboard
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 ***Applies to:*** *Office 2019, Office 2016*
 

@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with an overview of the different types of activation, such as KMS and MAK, available for volume licensed versions of Office, Project, and Visio."
-ms.date: 09/18/2024
+ms.date: 04/25/2025
 ---
 
 # Overview of volume activation of Office
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2024, Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
+
+[!INCLUDE [applies-to](../includes/applies-to.md)]
 
 Activation is the process of validating software with the manufacturer after it's installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and hasn't been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
