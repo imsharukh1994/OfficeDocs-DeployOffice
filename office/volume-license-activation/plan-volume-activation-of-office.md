@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # Overview of volume activation of Office
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 [!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 Activation is the process of validating software with the manufacturer after it's installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and hasn't been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 

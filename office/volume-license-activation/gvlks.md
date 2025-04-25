@@ -16,9 +16,9 @@ ms.date: 04/25/2025
 
 # GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 [!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 By default, volume licensed versions of Office, such as Office LTSC 2024, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
 

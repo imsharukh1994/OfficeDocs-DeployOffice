@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # File format reference for Word, Excel, and PowerPoint
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 [!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
 

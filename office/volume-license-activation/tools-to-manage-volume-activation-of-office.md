@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # Tools to manage volume activation of Office
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 [!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) help you configure and test volume licensed versions of Office, including Project and Visio. Before reading this article, review the following articles:
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)

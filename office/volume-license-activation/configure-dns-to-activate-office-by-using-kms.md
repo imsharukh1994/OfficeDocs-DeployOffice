@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # Configure DNS for activating volume licensed versions of Office by using KMS
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 [!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
   
 To activate volume licensed versions of Office, including Project and Visio, by using Key Management Service (KMS), the KMS host computer for Office must be discoverable. The KMS host computer automatically publishes its existence by creating service (SRV) resource records (RRs) on the DNS server. But, only the first KMS host computer can create an SRV RR. When multiple computers run KMS, other KMS host computers can't modify or update SRV RRs unless the DNS server permissions are configured to allow these changes.
 

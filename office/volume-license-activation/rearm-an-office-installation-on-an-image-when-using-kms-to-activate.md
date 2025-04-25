@@ -14,9 +14,9 @@ ms.date: 04/25/2025
 
 # Rearm a volume licensed version of Office that's included in an operating system image
 
-[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
-
 [!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 There's a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users don't see notifications to activate.
 
