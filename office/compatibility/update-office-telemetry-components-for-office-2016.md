@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn how to update processors and the database so that they work with Office Telemetry Dashboard in Office 2019 or Office 2016."
-ms.date: 03/01/2023
+ms.date: 04/25/2025
 ---
 
 # Update Office Telemetry Dashboard components
 
 ***Applies to:*** *Office 2019, Office 2016*
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 > [!IMPORTANT]
 > - Follow these steps only if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. 

@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
-ms.date: 04/03/2025
+ms.date: 04/25/2025
 ---
 
 # Tools to manage volume activation of Office
 
-***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+[!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) help you configure and test volume licensed versions of Office, including Project and Visio. Before reading this article, review the following articles:
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
@@ -220,7 +222,7 @@ Options appear in the following table.
 | /ipk *ProductKey* | Installs the product key for Windows (default) or another application identified by the product key. |
 | /ato *ActivationID* | Activates the KMS host for Windows (default) or the application identified by the provided Activation ID. |
 | /dti *ActivationID* | Displays the Installation ID used for telephone activation of the KMS host computer for Windows (default) or the application identified by the provided Activation ID. Enter the Installation ID into the telephone to receive the Confirmation ID, which activates the KMS host computer using the `/atp` parameter. |
-| /atp *ConfirmationID* *ActivationID* | After you receive the Confirmation ID, activates the KMS host for Windows (default) or the application identified by the provided Activation ID. |
+| /atp *ConfirmationID* *ActivationID* | After you receive the Confirmation ID, activate the KMS host for Windows (default) or the application identified by the provided Activation ID. |
 | /dlv *ActivationID* | Displays detailed license information for Windows (default) or the application identified by the provided Activation ID. <br/><br/>For example, run the following command at an elevated command prompt in the `Windows\system32` folder to get the status of the Office KMS host: <br/><br/> `cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C` |
 | /dli *ActivationID* | Displays license information for Windows (default) or the application identified by the provided Activation ID. |
 | /upk *ActivationID* | Uninstalls the product key for Windows (default) or the application identified by the provided Activation ID. <br/><br/>**CAUTION:** If you intend to uninstall the product key for Office and omit the Activation ID, the command uninstalls all installed product keys, including the Windows product key. |

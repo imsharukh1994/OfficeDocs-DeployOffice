@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 11/01/2024
+ms.date: 04/25/2025
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office
 
-***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+[!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 To activate volume licensed versions of Office, including Project, and Visio, you must have a Key Management Service (KMS) host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 
@@ -38,10 +40,10 @@ If your KMS host computer has internet access:
 1. Select the **Volume licensing** tab (only volume licensing administrators can access this section).  
 1. Go to the **Download and keys** tab, then download the KMS key for each product and version of Office that you want to activate using KMS.
 1. Download and run the appropriate Office Volume License Pack executable from the Microsoft Download Center.
-- [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=106246)
-- [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
-- [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
-- [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
+   - [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=106246)
+   - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
+   - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
+   - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
 1. Running the executable installs the pack on the KMS host computer and opens the Volume Activation Tools wizard.
 1. Follow the steps in the wizard and enter your KMS key when prompted.
 1. If a firewall is enabled, ensure port 1688 is open to allow the KMS host service through:
@@ -52,38 +54,38 @@ If your KMS host computer has internet access:
 If the KMS host computer doesn't have internet access, activate it by telephone.
 
 1. From an elevated command prompt, go to the Windows\system32 folder, and then run the following command:
-```console 
-   cscript slmgr.vbs /dti ACTIVATIONID
- ```   
-Replace *ACTIVATIONID* with the Activation ID for your version of Office.</br>
-- Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
-- Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
-- Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
-- Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7</br>  
-The result of running this command is a 36-digit installation ID. Paste the installation ID number into Notepad, and then break it up into six groups of six numbers.
+   ```console 
+      cscript slmgr.vbs /dti ACTIVATIONID
+    ```   
+   Replace *ACTIVATIONID* with the Activation ID for your version of Office.</br>
+   - Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
+   - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
+   - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
+   - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7</br>  
+   The result of running this command is a 36-digit installation ID. Paste the installation ID number into Notepad, and then break it up into six groups of six numbers.
 1. At the command line, run the following command:
-```console
-  slui.exe 4
-```
-This command launches the Windows phone activation wizard and it displays a telephone number.</br>
-After obtaining the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It's for Windows. 
-1. Call the telephone number. At each prompt, enter a group of six numbers. This 36-digit number is the installation ID that you obtained in step 1.
-1. When you hear the response, write down the numbers. These numbers are your confirmation ID.
-1. At the command line, run the following command:
+   ```console
+     slui.exe 4
+   ```
+   This command launches the Windows phone activation wizard and it displays a telephone number.</br>
+   After obtaining the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It's for Windows. 
+   1. Call the telephone number. At each prompt, enter a group of six numbers. This 36-digit number is the installation ID that you obtained in step 1.
+   1. When you hear the response, write down the numbers. These numbers are your confirmation ID.
+   1. At the command line, run the following command:
 
- ```console
-cscript slmgr.vbs /atp CONFIRMATIONID ACTIVATIONID
-```
-Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received over the telephone.
+     ```console
+     cscript slmgr.vbs /atp CONFIRMATIONID ACTIVATIONID
+     ```
+   Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received over the telephone.
+   
+   Replace *ACTIVATIONID* with the Activation ID for your version of Office.
 
-Replace *ACTIVATIONID* with the Activation ID for your version of Office.
+   - Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
+   - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
+   - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
+   - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
 
-- Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
-- Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
-- Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
-- Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
-
-You should see a message that the confirmation ID was successfully deposited.
+   You should see a message that the confirmation ID was successfully deposited.
 
 ## Verify activations by the KMS host computer
 

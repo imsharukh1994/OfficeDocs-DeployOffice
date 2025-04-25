@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
-ms.date: 05/13/2024
+ms.date: 04/25/2025
 ---
 
 # File format reference for Word, Excel, and PowerPoint
 
-***Applies to:*** *Office 2021, Office 2019, Office 2016*
+[!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
 

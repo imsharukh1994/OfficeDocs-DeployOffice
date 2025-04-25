@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn about components and sizing, topology, hardware, and bandwidth recommendations for Office Telemetry Dashboard deployments."
-ms.date: 05/22/2024
+ms.date: 04/25/2025
 ---
 
 # Plan a deployment of Office Telemetry Dashboard
 
 ***Applies to:*** *Office 2019, Office 2016*
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).

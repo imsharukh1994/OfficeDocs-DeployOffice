@@ -6,10 +6,10 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: high
 ms.topic: include
 description: Office 2019 end of support notification.
-ms.date: 04/24/2025
+ms.date: 04/25/2025
 ---
 
-<!--This file is shared by all Office 2019 documentation. Headings are driven by article context.-->
+<!--This file is shared by deploy.md, overview.md, update.md. Headings are driven by article context.-->
 
 > [!IMPORTANT]
 > Microsoft Office 2019 will reach end of support on *October 14, 2025*. After this date, Microsoft will no longer provide security patches, bug fixes, or technical support for this version. Users are recommended to migrate to the subscription-based Microsoft 365 service to avoid security risks.
