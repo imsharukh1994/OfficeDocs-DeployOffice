@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn about Microsoft 365 companions, including availability, opt-out options, and feedback mechanisms."
-ms.date: 04/02/2025
+ms.date: 04/28/2025
 ---
 
 # Overview of Microsoft 365 companion apps (preview)
@@ -46,12 +46,12 @@ Microsoft 365 companion apps automatically deploy to eligible users according to
 
 If you don’t want Microsoft 365 companion apps to be installed automatically, follow these steps:
 
-1. Sign in to the [Microsoft 365 apps admin center](https://config.office.com/) with an admin account.
-2. Go to **Customize** > **Device Configuration** > **Modern Apps Settings**.
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com/) with an admin account.
+2. Go to **Customization** > **Device Configuration** > **Modern Apps Settings**.
 3. Select **Microsoft 365 companions apps (preview)**, then clear the checkbox for **Enable automatic installation of Microsoft 365 companion apps**.
 
 > [!NOTE]
-> Clearing the checkbox doesn't remove Microsoft 365 companion apps from devices where they're already installed. While there's no dedicated Group Policy or Cloud Policy setting to disable automatic installation, administrators can manage deployment through the Microsoft 365 apps admin center.
+> Clearing the checkbox doesn't remove Microsoft 365 companion apps from devices where they're already installed. While there's no dedicated Group Policy or Cloud Policy setting to disable automatic installation, administrators can manage deployment through the Microsoft 365 Apps admin center.
 
 ## What is the deployment schedule?
 
