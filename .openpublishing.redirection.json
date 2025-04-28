@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "office/ltsc/preview/update-from-ltsc-preview.md",
+      "redirect_url": "/office/ltsc/2024/overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "DeployOffice/overview-office-client-policy-service.md",
       "redirect_url": "/DeployOffice/admincenter/overview-cloud-policy",
       "redirect_document_id": false
