@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 11/11/2024
+ms.date: 04/01/2025
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -32,7 +32,7 @@ This article offers guidance, resources, and links to help IT professionals and 
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for cloud migrations.
 
 > [!NOTE]
-> - If you're a home user who wants to upgrade from an older version of Office to the latest version of Office, see [How do I upgrade Office?](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)
+> - Home user who wants to upgrade from an older version of Office to the latest version, see [How do I upgrade Office?](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)
 > - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Upgrade your Microsoft 365 for business users to the latest Office client](/microsoft-365/admin/setup/upgrade-users-to-latest-office-client).
 
 ## What does end of support mean?
@@ -60,7 +60,7 @@ Before your older version of Office reaches its end of support, you should explo
 A key difference between Microsoft 365 Apps and Office LTSC is that Microsoft 365 Apps is continuously updated, with new features released as frequently as monthly. In contrast, Office LTSC versions include only the features available at their initial release—Office LTSC 2024 in September 2024.
 
 > [!NOTE]  
-> Office LTSC 2024 is designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.
+> Office LTSC 2024 is designed for specific scenarios. These include regulated devices that can't accept feature updates, process control devices on manufacturing floors, and specialty systems that can't connect to the internet.
 > For more information, see [Overview of Office LTSC 2024](/office/ltsc/2024/overview).
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
@@ -210,7 +210,7 @@ There are several methods to upgrade from Office 2016 or Office 2019 to Microsof
 
 If your organization uses Project or Visio, plan to upgrade these applications as well:
 
-- Subscription versions: Consider migrating to Visio Plan 2 or Project Plan 3/5, which are subscription-based and receive regular feature updates.
+- Subscription versions: Consider migrating to subscription-based options such as Visio Plan 2, Planner and Project Plan 3, or Planner and Project Plan 5. These plans receive regular feature updates.
 - Volume licensed versions: If you prefer volume licensing, you can upgrade to Visio LTSC 2024 or Project 2024.
 
 Refer to:
@@ -220,7 +220,7 @@ Refer to:
 
 ## Automate the removal of older Office versions
 
-It's recommended that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can automate this process:
+Uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can automate this process:
 
 - Use the Microsoft Support and Recovery Assistant (SaRA) to automate the uninstallation of older Office versions.
 
@@ -232,7 +232,7 @@ It's recommended that you uninstall any previous versions of Office before insta
 
   Replace `All` with a specific version number if needed (for example, 2016, 2019).
 
-- Configure the *RemoveMSI* element in the Office Deployment Tool configuration XML to remove existing MSI-based Office versions during installation.
+- Configure the *RemoveMSI* element in the Office Deployment Tool configuration XML file to remove existing MSI-based versions of Office during installation.
 
 If you have existing Click-to-Run (C2R) versions of Office installed, you can also remove them during the upgrade process by using the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md).
 
@@ -274,13 +274,13 @@ As with any new version of Office, there are new Administrative Template files (
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
 > [!NOTE]
-> The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps share the same download as Office 2019 and Office 2016. This is because Microsoft 365 Apps, Office 2019, and Office 2016 use the same product version number, 16.0.
+> The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps, Office 2019, and Office 2016 share the same download because all three products use the same product version number, 16.0.
 
 If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
 ## Remove older versions of Office when you upgrade
 
-To ensure a smooth installation of Microsoft 365 Apps, it's recommended to uninstall any previous versions of Office on the device. This step is particularly important for MSI-based installations, which must be removed before installing Microsoft 365 Apps to avoid potential conflicts. For more information on removing MSI-based Office versions, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
+To ensure a smooth installation of Microsoft 365 Apps, uninstall any previous versions of Office on the device. This step is important for MSI-based installations, which must be removed before installing Microsoft 365 Apps to avoid potential conflicts. For more information on removing MSI-based Office versions, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
 
 If you have existing Click-to-Run versions of Office installed such as Office 2016 or Office 2019, you can also remove them during the upgrade process by using the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md).
 

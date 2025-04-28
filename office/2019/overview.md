@@ -9,10 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides IT admins with an overview of deploying Office 2019."
-ms.date: 09/19/2024
+ms.date: 04/24/2025
 ---
 
 # Overview of Office 2019 (for IT Pros)
+
+[!INCLUDE [Office 2019 end of support notification](../includes/office-2019-eos.md)]
  
 Office 2019 is a version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.
 

@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 02/11/2025
+ms.date: 04/14/2025
 ---
 
 # Required diagnostic data for Office
@@ -653,6 +653,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 In addition, the following fields are common for all events for Outlook for Android.
 
 - **aad_id** - a pseudonymous Microsoft Entra identifier
+
+- **build_package** - The build package format for the app (Android App Bundle (AAB) or Android Package Kit (APK)) that the app was built as. This will help us attribute bugs or issues to the new AAB format that will be rolling out on the Play store. By putting it in the common properties we can know if the AAB is causing more crashes than before.
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost, which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
@@ -2498,6 +2500,8 @@ The following fields are collected:
 - **Days_Since_Last_Ad_Seen** - Days since last ad seen.
 
 - **Days_Since_Last_Ad_Seen_Excl_Focused** - Days since last ad seen, excluding ad placements in Focused inbox.
+
+- **from_source** - Indicates how the current app component was reached.
 
 - **is_ad_personalization_enabled** - indicates whether personalized ads are enabled.
 
@@ -10757,6 +10761,8 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened 
 
+- **Data_Doc_IsPrewarmed** - Indicates that the event occurred in an Instant Boot session. As part of an Instant Boot session, we run a prewarmed instance of the app in the background. So, when the user opens the app, the boot is very fast. This field indicates that we are in an Instant Boot session.
+
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer 
 
 - **Data_Doc_KnownFolderMoveStatus** - represents the signed-in user's known folder migration status in a given session.
@@ -11645,6 +11651,10 @@ The following fields are collected:
 - **notification_action** - To check if you have configured any notification actions for triaging emails to help us make sure this setting is working successfully 
 
 - **notification_action_number** - To check if your notification actions (action one or action two) are configured correctly
+
+- **prioritize_rule_action** - Indicates where user added, deleted, or edited a rule.
+
+- **prioritize_rule_type** - Indicates whether a user modified a high, low, or other type of rule priority setting.
 
 - **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better. Examples: Office365, Gmail, Outlook
 
@@ -12604,6 +12614,58 @@ The following fields are collected on iOS:
 - **Data_mediaCompressionFactor** - The factor by which images are compressed by app.
 
 - **Data_version** - Version of the SDK running in the app.
+
+#### Office.MobileMeasurementPartner.Launch
+
+The event is triggered when the application starts on mobile devices (iOS and Android) and collected system metadata will be employed to assess product performance across various installation sources to ensure Office from such install sources works as expected. 
+
+The following fields are collected:
+
+- **a** - Singular SDK Key. The Mobile Measurement Partner.
+
+- **aifa** - For Android apps only: Lower-case raw advertising ID with dashes.​
+
+- **app_v​** - The application version.
+
+- **asid​** - The App Set ID.
+
+- **att_authorization_status​** - The App Transparency authorization status.​
+
+- **attribution_token​** - For iOS apps only: Apple Search Ads attribution token​.
+
+- **bd​** - The operating System version of the device.
+
+- **c​** - For iOS apps only: it specifies the network connection type.
+
+- **country​** - Country code of the device at the time of the session start.
+
+- **data_sharing_options​** - Flag that indicates user's consent to share additional information.
+
+- **i** - Package Name (Android) or Bundle ID (iOS) of the application.​
+
+- **idfa​** - For iOS apps only: Upper-case raw advertising ID with dashes.​
+
+- **idfv​** - For iOS apps only: Upper-case raw IdentifierForVendor with dashes.​
+
+- **install_receipt​** - For iOS apps only: The receipt received from the Apple App Store.
+
+- **install_ref​** - For Android apps only: Install Referrer Information​ from Google Play Store.
+
+- **install_source​** - For Android apps only: Install source package name. 
+
+- **install_time​** - The time of the first app install. ​
+
+- **lc​** - The locale tag for the device indicating language and country code.​
+
+- **ma​** - Make of the device hardware.
+
+- **mo​** - Model of the device hardware.
+
+- **n** - Represents the name of the app launched.
+
+- **p** - One of the following Platforms: Android or iOS​
+
+- **ve** - Operating system version of the device at session start.​
 
 
 #### Office.OfficeMobile.AppActivation.Launch
@@ -14265,6 +14327,8 @@ The following fields are collected:
 This event is triggered at the end of a session and is used to detect what Assistive technology tools (if any) are enabled during a session. This allows us to understand if an Office user is experiencing issues with a specific Assistive Technology tool.
 
 The following fields are collected:
+
+- **Data_Data_BeMyEyes** - indicates if Be My Eyes app was running during the session.
 
 - **Data_Data_Dolphin** - indicates is Dolphin was running during the session
 
@@ -17048,6 +17112,17 @@ The following fields are collected:
 - **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
 
 
+#### Office.Extensibility.OfficeJs.ExternalCodeServiceCore.ExecutePythonCode
+
+This event is triggered when the user initiates Copilot Advanced Analysis in Excel, which calls an OfficeJs API to execute Python code. The data is used to analyze API performance.
+
+The following fields are collected:
+ 
+- **CorrelationId** – The internal call correlation ID.
+
+- **Duration** – The time duration for this call to complete.
+
+
 #### Office.Extensibility.RichApiMethodInvocation
 
 When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance, and usage for Rich API method invocation.
@@ -19235,6 +19310,7 @@ This event is triggered when the user initiates Copilot Advance Analysis in Exce
 
 - **Tag** – A unique tag if diagnostic tag is not available.
 
+- **TimepointMilliseconds** - start time point for the event action.
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 

@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 09/18/2024
+ms.date: 04/25/2025
 ---
 
 # Activate volume licensed versions of Office by using KMS
 
-***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*  
+[!INCLUDE [applies-to](../includes/applies-to.md)]
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled. GVLKs support both Key Management Service (KMS) and Active Directory-based activation. On the KMS host computer configured to support volume activation of Office, you install and enable only one KMS host key to activate all volume licensed versions of Office.
   

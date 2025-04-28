@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins using Microsoft 365 Apps with information about which versions of Windows Server are supported."
-ms.date: 11/04/2024
+ms.date: 04/24/2025
 ---
 
 # Windows Server end of support and Microsoft 365 Apps
@@ -47,6 +47,11 @@ For recommendations on other client hosting solutions, see [Microsoft 365 Apps m
 
 Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
 
+> [!NOTE]
+> In the interest of maintaining security while customers complete their migrations to a supported configuration, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2019 for a total of three years, ending on October 10, 2028. 
+> 
+> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
+
 For end of support dates for Windows Server 2019, see the [Windows Server 2019 lifecycle](/lifecycle/products/windows-server-2019) page.
 
 For recommendations on other client hosting solutions, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
@@ -54,6 +59,11 @@ For recommendations on other client hosting solutions, see [Microsoft 365 Apps m
 ## Windows Server 2016
 
 Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
+
+> [!NOTE]
+> In the interest of maintaining security while customers complete their migrations to a supported configuration, Microsoft will continue providing security updates for Microsoft 365 desktop apps running on Windows Server 2016 for a total of three years, ending on October 10, 2028. 
+> 
+> For more information on support after October 2025, see [Office and Windows configuration support matrix](/lifecycle/office-windows-configuration-matrix)
 
 For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
 
@@ -82,7 +92,7 @@ For end of support dates for Windows Server 2008 R2, see the [Windows Server 200
 
 ## Additional information
 
-- Subscription versions of the Project and Visio desktop apps, such as Project Plan 5 or Visio Plan 2, are also included in this information.
+- Subscription versions of the Project and Visio desktop apps, such as Planner and Project Plan 5 or Visio Plan 2, are also included in this information.
 - The [Windows and Office configuration support matrix (PDF)](https://aka.ms/windows-office-support-matrix) provides end of support dates for different versions of Office on various versions of Windows.
 - The [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) page on the Microsoft Tech Community offers discussions and additional information about Office versions reaching end of support.
 

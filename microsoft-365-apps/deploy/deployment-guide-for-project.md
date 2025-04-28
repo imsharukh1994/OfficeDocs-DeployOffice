@@ -10,14 +10,14 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project to users in their organization."
-ms.date: 10/08/2024
+ms.date: 04/01/2025
 ---
 
 # Deployment guide for Project
 
 How you deploy Project to the users in your organization depends on which version of Project you purchase. A common purchase option for organizations is one of the following versions of Project:
   
-- Project Online Desktop Client, available as a subscription with Project Plan 3 or Project Plan 5.
+- Project Online Desktop Client, available as a subscription with Planner and Project Plan 3 or Planner and Project Plan 5.
 - Project Professional 2024 or Project Standard 2024, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2021 or Project Standard 2021, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2019 or Project Standard 2019, available as a one-time purchase through a volume licensing agreement.
@@ -36,7 +36,7 @@ The following sections provide guidance on how to deploy different versions of P
 
 Here are the general steps to deploy Project Online Desktop Client to users in your organization:
 
-1. Purchase either Project Plan 3 or Project Plan 5, which includes Project Online Desktop Client, with enough licenses for all of your Project users.
+1. Purchase either Planner and Project Plan 3 or Planner and Project Plan 5, which includes Project Online Desktop Client and the Planner app, with enough licenses for all of your Project users.
 2. Sign in to the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center) and [assign licenses](/microsoft-365/admin/manage/assign-licenses-to-users) for Project Online Desktop Client to those users.
 3. Have your users sign in to [Office.com](https://www.office.com) and install Project from the **Apps & devices** section of [My account](https://portal.office.com/account). Users have to be local administrators on their devices to install Project.
 
@@ -65,7 +65,7 @@ If you use other tools, such as Microsoft Configuration Manager, to deploy softw
 > [!NOTE]
 > - Volume licensed versions of Project 2024 are available directly from the Office CDN.
 > - Volume licensed versions of Project 2024 are installed using Click-to-Run rather than Windows Installer (MSI).
-> - The Office Customization Tool (OCT) used for Windows Installer (MSI) versions of Project is not applicable for volume licensed versions of Project 2024.
+> - The Office Customization Tool (OCT) used for Windows Installer (MSI) versions of Project isn't applicable for volume licensed versions of Project 2024.
 
 ### Deploy a volume licensed version of Project 2021
 

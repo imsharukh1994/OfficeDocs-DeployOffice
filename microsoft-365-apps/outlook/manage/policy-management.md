@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides guidelines for configuring and managing mailbox accounts and features in Microsoft 365 using Exchange PowerShell cmdlets and Cloud Policy."
-ms.date: 02/24/2025
+ms.date: 04/28/2025
 ---
 
 # Policy Management in new Outlook for Windows
@@ -31,7 +31,7 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 >
 > Most features like Focused Inbox and Loop are specific to each account. If you disable these features, they turn off only for that account. However, in new Outlook, other features are disabled at the organization level, for example, if any account has in-product feedback disabled, the feature becomes unavailable for all accounts.
 >
-> Most of the mailbox policies apply to both Outlook on the web (formerly known as Outlook Web App or OWA) and Monarch, so you can't enable them on one client but not the other.
+> Most of the mailbox policies apply to both Outlook on the web (formerly known as Outlook Web App or OWA) and New Outlook for Windows, so you can't enable them on one client but not the other.
 
 ## Allow only corporate mailboxes to be added
 

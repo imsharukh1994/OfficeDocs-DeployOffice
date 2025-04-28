@@ -10,28 +10,28 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
-ms.date: 05/07/2024
+ms.date: 04/28/2025
 ---
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
 
 > [!IMPORTANT]
-> As of October 23rd, 2023, new installations of Microsoft 365 and Office 365 will include Teams only if a Teams service plan is in place. For more information on available plans, see [Microsoft Teams service description](/office365/servicedescriptions/teams-service-description#available-plans)
+> As of October 23, 2023, new installations of Microsoft 365 and Office 365 will include Teams only if a Teams service plan is in place. For more information on available plans, see [Microsoft Teams service description](/office365/servicedescriptions/teams-service-description#available-plans)
 
 > [!NOTE]
-> The new Teams client is not bundled with the Microsoft 365 Apps offline package. For new installations of Microsoft 365 Apps, an active internet connection is required to download the new Teams app. In cases where an internet connection is unavailable during the installation of Microsoft 365 Apps, [admins will need to deploy new Teams client separately](/MicrosoftTeams/new-teams-bulk-install-client).
+> The new Teams client isn't bundled with the Microsoft 365 Apps offline package. For new installations of Microsoft 365 Apps, an active internet connection is required to download the new Teams app. In cases where an internet connection is unavailable during the installation of Microsoft 365 Apps, [admins will need to deploy new Teams client separately](/MicrosoftTeams/new-teams-bulk-install-client).
 
 In the past, Microsoft Teams was a separate installation from Microsoft 365 Apps. Now, Teams is included with both ***new*** and ***existing*** installations of Microsoft 365 Apps on Windows. If Teams was already installed on a device, that installation remains unchanged. Users can explore the new Teams features by toggling the "Try the new Teams" switch in classic Teams interface, or administrators can [bulk deploy the new Microsoft Teams client](/MicrosoftTeams/new-teams-bulk-install-client).
 
 > [!NOTE]
-> To complete the installation of Teams on new or existing installations of Microsoft 365 Apps, either restart the device or have the user log off and log back on. If the classic Teams app is already installed, the Microsoft 365 Apps deployment will install new Teams alongside classic Teams on the device. The classic Teams installation will not change.
+> To complete the installation of Teams on new or existing installations of Microsoft 365 Apps, either restart the device or have the user sign out and log back on. If the classic Teams app is already installed, the Microsoft 365 Apps deployment installs new Teams alongside classic Teams on the device. The classic Teams installation won't change.
 
 If Skype for Business is already installed on the device, Skype for Business isn't removed and continues to function as before. Skype for Business continues to be installed with new installations of Microsoft 365 Apps, unless you configure your installation to exclude it.
 
 We also have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) or [existing](#what-about-existing-installations-of-microsoft-365-apps) installations of Microsoft 365 Apps if your organization isn't ready to deploy Teams.
 
 > [!IMPORTANT]
-> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Configuration Manager](/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
+> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Configuration Manager](/MicrosoftTeams/msi-deployment). In the future, you're able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
 
 If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
@@ -57,11 +57,11 @@ The date that Teams was included with ***new*** installations of Microsoft 365 A
 ## When did installations of Microsoft 365 Apps start including the new Microsoft Teams?
 
 > [!NOTE]
-> New installations of Microsoft 365 Apps may include the new Microsoft Teams app starting with Version 2311. Previous versions may include the Classic Teams app.
+> New installations of Microsoft 365 Apps might include the new Microsoft Teams app starting with Version 2311. Previous versions might include the Classic Teams app.
 > 
 > After new Teams is installed, users will automatically switch to the new Microsoft Teams. Afterward, they can switch back to classic Teams by selecting the "New Teams" toggle switch.
 
-The new Microsoft Teams app may install for existing installations of Microsoft 365 Apps, depending on which update channel you're using. The following table shows the schedule.
+The new Microsoft Teams app might install for existing installations of Microsoft 365 Apps, depending on which update channel you're using. The following table shows the schedule.
 
 | Plan | Channel | Date |
 |---------|---------|---------|
@@ -124,7 +124,7 @@ If you don't want Teams to be added to ***existing*** installations of Microsoft
 ### Microsoft 365 Apps admin center
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with an admin account.
-2. Go to **customize** > **Device Configuration** > **Modern Apps Settings**. 
+2. Go to **Customization** > **Device Configuration** > **Modern Apps Settings**. 
 3. Select **Microsoft Teams (work or school)**, then clear the **Enable automatic installation of new Microsoft Teams** check box.  
 
 ### Group Policy
@@ -149,7 +149,7 @@ If you want to use the [Office Deployment Tool](overview-office-deployment-tool.
 
 > [!NOTE]
 > - Be sure you're using the most current version of the ODT available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
-> - If your existing installation of Microsoft 365 Apps has excluded other apps, such as Access, you need to include a line in your configuration.xml file for each of those excluded apps. Otherwise, those apps will be installed on the device.
+> - If your existing installation of Microsoft 365 Apps excludes other apps, such as Access, you need to include a line in your configuration.xml file for each of those excluded apps. Otherwise, those apps are installed on the device.
 > - If you have Microsoft 365 Apps for business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
 Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Microsoft 365 Apps is configured to get updates from the Office Content Delivery Network (CDN) and the update channel or version you're using includes Teams as part of the installation.

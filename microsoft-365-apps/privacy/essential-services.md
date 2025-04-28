@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 02/11/2025
+ms.date: 04/14/2025
 ---
 
 # Essential services for Office
@@ -4700,6 +4700,8 @@ Critical Usage telemetry for when Paywall control is shown to the user. Used to 
 
 The following fields are collected:
 
+- **CampaignID** - Campaign ID for the subscription screen shown. Campaign ID is decided based on the purchase entry-point, app, device type.
+
 - **EventDate** – Timestamp of the event occurrence 
 
 - **IsModeFRE** – Boolean to indicate experience type, Upsell dialog or SKU Chooser *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -4990,6 +4992,17 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **status** - String – Exit status of Paywall. Like “initiated”, “paymentDone”, “provisionFailed”.
    - **userDuration** - Double – Duration in milliseconds the user spent on Paywall
 
+
+- **Office.iOS.Paywall.Provisioning.Request** - This sub-event is triggered before the application initiates the subscription provisioning request to Microsoft. Logging these data fields is necessary to confirm that the request being sent to Microsoft's internal service is accurate.
+
+   The following fields are collected:
+   - **AuthToken** - String - Size of the user auth token.
+   - **CampaignId** - String - Campaign ID associated with the purchase entry point.
+   - **CountryCode** - String - 2 letter or 3 letter Country Code.
+   - **OriginalTransactionId** - String - Apple Transaction Id for the purchase.
+   - **ProductId** - String - App Store ID of the product the request was made for.
+  
+
 - **Office.iOS.Paywall.Provisioning.Response** - Critical Engineering Telemetry and Contract with Retail Federation Service (RFS) to collect the information provided in this. RFS is the internal service used within Microsoft for crosschecking the purchase. This is used to get the health of the API call made to RFS which would help in understand that the performance of the integration is as expected.  
 
    The following fields are collected:
@@ -5004,6 +5017,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product the request was made for
    - **status** - String – Success or Failure, indicating if the request succeeded or failed
+   - **TransactionId** - Current Apple Transaction Id for the purchase. Current and Original Transaction Id might be different for some scenarios like Offer redemption.
 
 
 - **Office.iOS.Paywall.PurchaseCompleteScreen.Shown** - To log how many users have failed to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow) and Activation API (Licensing flow) and see the success screen. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
@@ -5078,8 +5092,10 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **floatingToggleCount** - Int - Number of times the user switched between monthly and yearly on the floating dock
    - **graceLeftoverDays** - Int – number of days left for grace period
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+   - **jumpScrollInteracted** - Bool - If user clicked on the jumping scroll down button to navigate to comparison table.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **scrollDepth** - Double - Scroll depth throughout the current session of paywall.
+   - **studentOfferButtonTap** - Indicates whether user clicked on the button to view the student discount offer screen.
    - **userDuration** - Double – Duration in milliseconds the user spent on the SKU chooser.
    - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.  
 
@@ -5112,6 +5128,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
    - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”, "Restore"
    - **status** - String – Success or Failure, indicating success or failure of the request.
+   - **TransactionId** - Current Apple Transaction Id for the purchase. Current and Original Transaction Id might be different for some scenarios like Offer redemption.
    - **trialInfo** - String: Bool - Captures trial info of all the products fetched from App Store. This will be empty if trial info fetching fails.
 
 
@@ -5124,6 +5141,35 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **provisioningAPICalled** – Indicates whether the provisioning API was called for this transaction.
    - **status** - String – To know the response during of this restore process (successful, failed, or unexpected)
    - **transactionId** –Transaction ID of the transaction that user tried to restore.
+
+- **Office.iOS.Paywall.StudentOfferIneligibleScreen.Stats** - This event is triggered when a user lands on the student offer’s ineligible screen after trying to verify themselves. The data collected helps understand the reasons why a user is ineligible for the student discount post a student verification attempt. This data would help identify unfair rejections due to backend system faults and help further improve the experience.
+
+   The following fields are collected:
+
+   - **exitReason** - Indicates the reason why the user exited the Student Ineligible screen, either to close the paywall control or to buy product.
+   - **PaywallSessionId** - Unique identifier of a Paywall session in an app session.
+   - **productId** - App Store ID of the product for which the user is viewing all benefits offered.
+
+- **Office.iOS.Paywall.StudentOfferScreen.Stats** - This event is triggered when a user visits the student discount offer screen after clicking the "Student offer" button in the main subscription screen. Data will be used to monitor the performance of various clickable elements and ensure correct product is being offered. All this data would help navigate to the root cause in case of failures and help to optimize the end user experience further.
+
+   The following fields are collected:
+
+   - **exitReason** - Exit reason of student offer screen to know if user exits to previous screen via Back button or continues with student verification to the next screen.
+   - **PaywallSessionId**- Collected to uniquely identify a Paywall session in an app session.
+   - **productId** - Apple subscription product ID of the student discounted product for which user is viewing all benefits offered.
+
+- **Office.iOS.Paywall.StudentVerificationScreen.Stats** - This event is triggered when a user visits the student verification screen. The data collected helps monitor fraud, error, and safe status codes post a verification attempt of the user. It also helps in early detection of security risks and root cause analysis in case of unfair rejection with certain verification methods.
+
+   The following fields are collected:
+
+   - **academicVerificationStatusCode** - Data would help monitor fraud, error, and safe academic verification status codes post a verification attempt of the user.
+   - **backButtonTap** - Indicates if the back button was tapped to exit the verification screen.
+   - **isUserRisk** - Indicates if the user is failing or passing the risk checks to help in early detection of security risks.
+   - **isVerifiedStudentSameAsAppUser** - Indicates if the verified student user is the same as the app user to help in detecting fraudulent verification to claim discount by using another account.
+   - **PaywallSessionId** - Unique identifier of a Paywall session in an app session.
+   - **refreshButtonTap** - Indicates if the refresh button was tapped to reload the verification screen.
+   - **studentVerificationMethod** - Data would help us do root cause analysis in case of unfair rejection with certain verification methods
+
 
 
 - **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
@@ -5315,6 +5361,14 @@ The following fields are collected:
 - **failureReason** - Indicates the failure reason of shareable link service.
 
 
+### Office.iOS.Paywall.ShareSubscriptionScreen.ShareableLinkSuccess
+
+This event is triggered when user clicks on Share Invite link on the subscription sharing screen. Note that this screen must be activated through user profile page for this event to get triggered. This event is used to confirm that clicking the invite link on the subscription sharing screen generated the correct link.
+
+The following fields are collected:
+ 
+- None
+
 ### Office.iOS.Paywall.SuccessScreen.ShareableLinkFail 
 
 This event is triggered when tapping the "Share Invite" link on the Family onboarding congratulation screen fails. The data is used to determine the reason for the shareable link service failure.
@@ -5322,6 +5376,15 @@ This event is triggered when tapping the "Share Invite" link on the Family onboa
 The following fields are collected: 
 
 - **failureReason** - Indicates the failure reason of the shareable link service
+
+
+### Office.iOS.Paywall.SuccessScreen.ShareableLinkSuccess 
+
+This event is triggered when user successfully purchases the Family subscription and is displayed the Success screen. Note that this event will only get triggered if the Sharable Link screen was activated from the Success screen. This event is used to confirm that the Family subscription sharable link was successfully generated. 
+
+The following fields are collected:
+ 
+- None
 
 
 ### Office.iOS.Paywall.SuccessScreen.ShareLinkTap
@@ -5785,6 +5848,14 @@ The following fields are collected:
 
 - **ACID** - The Globally Unique Identifier (GUID) representing the license SKU
 
+- **Data_AppDisabled** - Whether the app is disabled for editing documents.
+
+- **Data_ErfmEligibility** - Whether the user is eligible for Enhanced RFM.
+
+- **Data_HasUsedGrace** - Whether the user has used their Grace license.
+
+- **Data_IsInViewerMode** - Whether the user is in Viewer Mode.
+
 - **DaysRemaining** - Days remaining on the license
 
 - **Mode** - Which licensing stack we're using (0 = Legacy, 2 = NUL)
@@ -5800,15 +5871,23 @@ If the device enters reduced functionality mode, we send out this signal to indi
 
 The following fields are collected:
 
-  - **ACID** - A GUID identifier representing the Office product that the user is licensed for
+- **ACID** - A GUID identifier representing the Office product that the user is licensed for
 
-  - **DaysRemaining** - Number of days remaining before the current Office license expires
+- **Data_AppDisabled** - Whether the app is disabled for editing documents.
 
-  - **Mode** – An enumerator representation of the Office licensing stack that is being used on this machine
+- **Data_ErfmEligibility** - Whether the user is eligible for Enhanced RFM.
 
-  - **ProductName** – Name of the product that the user is currently using
+- **Data_HasUsedGrace** - Whether the user has used their Grace license.
 
-  - **Reason** – The error code indicating the reason for the current status of the license
+- **Data_IsInViewerMode** - Whether the user is in Viewer Mode.
+
+- **DaysRemaining** - Number of days remaining before the current Office license expires
+
+- **Mode** – An enumerator representation of the Office licensing stack that is being used on this machine
+
+- **ProductName** – Name of the product that the user is currently using
+
+- **Reason** – The error code indicating the reason for the current status of the license
 
 ### Office.Licensing.InstallKey
 
@@ -5855,6 +5934,14 @@ This event is triggered when the licensing flow has finished, and the user is in
 The following fields are collected:
 
 - **ACID** - The GUID representing the license SKU
+
+- **Data_AppDisabled** - Whether the app is disabled for editing documents.
+
+- **Data_ErfmEligibility** - Whether the user is eligible for Enhanced RFM.
+
+- **Data_HasUsedGrace** - Whether the user has used their Grace license.
+
+- **Data_IsInViewerMode** - Whether the user is in Viewer Mode.
 
 - **DaysRemaining** - Days remaining on the license
 
@@ -6176,6 +6263,191 @@ The following fields are collected:
 - **Acid** - The Globally Unique Identifier (GUID) representing the license SKU
 
 - **GraceTime** - the total time granted by the grace license
+
+
+### Office.Licensing.TelemetryFlow.FetchLicenseFlow
+
+This event is triggered when any Office client application (for example, Word, Excel, or PowerPoint) requests the Office Licensing Service to issue a digitally signed license file for the first time during initial activation or when renewing an existing license file. The information logged by this event is used internally by Microsoft to establish metrics that help us monitor the health of licensing services and quickly be alerted of any issues.
+
+The following fields are collected:
+ 
+- **AADDeviceID** - Identifier assigned to the current device by Microsoft Entra ID.
+
+- **AcceptingExpiredLicenseFromOls** - Flag that indicates we've received an expired license file from the Office Licensing Service.
+
+- **Attempt1Successful** - Flag that indicates whether the first attempt at deserializing the license file succeeded.
+
+- **Attempt2Successful** - Flag that indicates whether the first second at deserializing the license file succeeded.
+
+- **Beneficiary** - Type of beneficiary identified in the license file (for example, user or device).
+
+- **Category** - Category of the product for which we are attempting to fetch or renew a license.
+
+- **CountUsableIdentitiesInProfileList** - Number of usable user identities an invalid license was checked against using the profile implementation.
+
+- **CountUsableIdentitiesInUnfilteredIdentityList** - Number of usable user identities an invalid license was checked against using the identity implementation.
+
+- **CurrentApp** - Current Office client application (for example, Word, Excel, or PowerPoint)
+
+- **CurrentMode** - Current licensing mode.
+
+- **CurrentTime** - Current time.
+
+- **Deserialize_ResultTag** - Code location identifier for the license deserialization result.
+
+- **Deserialize_Succes** - Flag that indicates whether the license deserialization succeeded.
+
+- **DidvNextFallBack** - Flag that indicates whether we fell back from our modern to our legacy licensing stack.
+
+- **DoesCurrentHDDMatch** - Flag that indicates whether the hard disk drive identifier encoded in the hardware identifier embedded in the license matches the one retrieved from the current device.
+
+- **DoesCurrentHwIdMatch** - Flag that indicates whether the hardware identifier embedded in the license matches the one calculated from the current device.
+
+- **DoesCurrentMotherboardMatch** - Flag that indicates whether the motherboard identifier encoded in the hardware identifier embedded in the license matches the one retrieved from the current device.
+
+- **DoesCurrentRAMMatch** - Flag that indicates whether the RAM identifier encoded in the hardware identifier embedded in the license matches the one retrieved from the current device.
+
+- **DoesOldHDDMatch** - Flag that indicates whether the hard disk drive identifier encoded in the hardware identifier embedded in the license matches the one retrieved from the current device using the previous implementation.
+
+- **DoesOldHwIdMatch** - Flag that indicates whether the hardware identifier embedded in the license matches the one calculated from the current device using the previous implementation.
+
+- **DoesOldMotherboardMatch** - Flag that indicates whether the motherboard identifier encoded in the hardware identifier embedded in the license matches the one retrieved from the current device using the previous implementation.
+
+- **DoesOldRAMMatch** - Flag that indicates whether the RAM identifier encoded in the hardware identifier embedded in the license matches the one retrieved from the current device using the previous implementation.
+
+- **Encoding** - Type of encoding of the certificate embedded in the license received.
+
+- **Endpoint** - Identifier of the Office Licensing Service endpoint used in the request.
+
+- **EntitledApps** - List of Office client applications (for examplle, Word, Excel, or PowerPoint) whose use is granted by the license file.
+
+- **EntitlementID** - Identifier of the product entitlement for which we are attempting to fetch or renew a license.
+
+- **FetchBlob_ResultCode** - Type of result of the license fetching or renewal request against the Office Licensing Service.
+
+- **FetchBlob_ResultTag** - Code location identifier for the result of the license fetching or renewal request against the Office Licensing Service.
+
+- **FetchBlob_Success** - Flag that indicates whether the license fetching or renewal request against the Office Licensing Service succeeded.
+
+- **FetchFeaturePreviewsFromOls_FeatureId** - Identifier of the feature for which a perpetual feature preview license will be fetched.
+
+- **FetchFeaturePreviewsFromOls_ResultCode** - Type of result of the fetch perpetual feature preview license process against the Office Licensing Service.
+
+- **FetchFeaturePreviewsFromOls_ResultTag** - Code location identifier for the result of the fetch perpetual feature preview license process against the Office Licensing Service.
+
+- **FetchFeaturePreviewsFromOls_Success** - Flag that indicates whether the fetch perpetual feature preview license process against the Office Licensing Service succeeded.
+
+- **FetcherType** - Type of the fetcher code object used to handle the overall license fetching or renewal process.
+
+- **FetchModelFromOls_ResultCode** - Type of result of the license fetching or renewal process against the Office Licensing Service.
+
+- **FetchModelFromOls_ResultTag** - Code location identifier for the result of the license fetching or renewal process against the Office Licensing Service.
+
+- **FetchModelFromOls_Success** - Flag that indicates whether the license fetching or renewal process against the Office Licensing Service succeeded.
+
+- **GetAuthTicket_AuthError** - Overall type of error when failing to get an identity authentication ticket to append to the license fetching request.
+
+- **GetAuthTicket_ConditionalAccessError** - Type of error when failing to get an identity authentication ticket to append to the license fetching request and the error may be resolved by the user taking an action or otherwise fixing the condition that is not being satisfied.
+
+- **GetAuthTicket_FailedToGetServiceTicketInfo** - Flag that indicates whether we failed to receive a valid response from the authentication service.
+
+- **GetAuthTicket_NewAuthTokensCount** - Number of identity authentication tickets we received from the authentication service.
+
+- **GetAuthTicket_ResultTag** - Code location identifier for the result of the get authentication ticket attempt.
+
+- **GetAuthTicket_Success** - Flag that indicates whether the get authentication ticket attempt succeeded.
+
+- **GetERFMLicense_FetchingStatusCode** - Type of result of the extended reduced functionality mode license fetching process against the Office Licensing Service.
+
+- **GetFeaturePreviews_ResultTag** - Code location identifier for the result of the fetch perpetual feature preview license overall process.
+
+- **GetFeaturePreviews_Success** - Flag that indicates whether the fetch perpetual feature preview license overall process succeeded.
+
+- **GetLicense_FetchingStatusCode** - Type of result of the license fetching process against the Office Licensing Service.
+
+- **GetLicense_ResultTag** - Code location identifier for the result of the fetch license overall process.
+
+- **GetLicense_Success** - Flag that indicates whether the fetch license overall process succeeded.
+
+- **GetSCALicense_Success** - Flag that indicates whether the shared computer activation fetch license overall process succeeded.
+
+- **GetSignatureValidationResult_ResultTag** - Code location identifier for the result of the license file signature validation.
+
+- **GetSignatureValidationResult_Success** - Flag that indicates whether the license file signature validation succeeded.
+
+- **HrHasInternetConnectivity** - HRESULT of the check to determine if we have Internet connectivity.
+
+- **IdentityProvider** - Type of information provider associated with the identity being used in the license fetching or renewal request. Microsoft accounts and organizational accounts have different types of information providers.
+
+- **InvalidAuthTicketAndLicenseNearExpiry** - Flag that indicates whether we have an invalid identity authentication ticket and the license file is nearing its expiration date.
+
+- **IsReactivation** - Flag that indicates whether we are doing license fetching despite having an existing license.
+
+- **IsRenewal** - Flag that indicates whether we are doing license renewal.
+
+- **LastError** - Type of error we received from the Office Licensing Service as a response to our license fetching or renewal attempt.
+
+- **LicenseType** - Type of the product for which we are attempting to fetch or renew a license. Similar to Category.
+
+- **MakeRequest_CancellationException** - Code exception thrown by the network request stack when attempting to fetch or renew a license.
+
+- **MakeRequest_ResultCode** - Type of result of the license fetching or renewal request against the Office Licensing Service.
+
+- **MakeRequest_ResultTag** - Code location identifier for the result of the license fetching or renewal request against the Office Licensing Service.
+
+- **MakeRequest_Success** - Flag that indicates whether the license fetching or renewal request against the Office Licensing Service succeeded.
+
+- **NotAfter** - Date and time after which the license file cannot be used.
+
+- **NotBefore** - Date and time before which the license file cannot be used.
+
+- **RemovedLicenseIdFromMapping** - Flag that indicates whether a license file identified by a specific License ID (not logged) was successfully removed from the device as a result of the licensing being fetched or renewed triggering a conversion of the installed product.
+
+- **RemoveModel_ResultTag** - Code location identifier for the result of license file identified by a specific License ID (not logged) attempting to be removed.
+
+- **RenewLicense_FetchingStatusCode** - Type of result of the license fetching or renewal process against the Office Licensing Service.
+
+- **RenewLicense_ResultTag** - Code location identifier for the result of the renew license overall process.
+
+- **RenewLicense_Success** - Flag that indicates whether the renew license overall process succeeded.
+
+- **SentBecauseOfDuplication** - Flag indicating if an event was sent because of multiple registrations to send data.
+
+- **SentOnDestruction** - Flag that indicates if the event was sent during the destruction of a class object. 
+
+- **ShouldUseRenewalEndpoint** - redundant with above. Flag that indicates whether we should use the license renewal endpoint.
+
+- **ShouldUseRenewalEndpoint_ResultTag** - Code location identifier for the result of whether we should use the license renewal endpoint.
+
+- **ShouldUseRenewalEndpoint_Success** - Flag that indicates whether we should use the license renewal endpoint.
+
+- **Source** - Human-readable name of the type of license fetching or renewal process we are doing.
+
+- **StorageType** - Type of storage implementation we are using to store the license file in the device.
+
+- **StoreModel_LastError** - HRESULT of the attempt to store the license file in the device.
+
+- **StoreModel_ResultTag** - Code location identifier for the result of the attempt to store the license file in the device.
+
+- **Tag** - Code location identifier for the termination point of a telemetry sequence.
+
+- **UseNewOLSCert_value** - Flag that indicates the use of a new Office Licensing Service certificate
+
+- **ValidateResponse_ResultTag** - Code location identifier for the result of validating a service response. 
+
+- **ValidateResponseFailureStatus** - Result status of the failure in validity of a service response.
+
+- **VerifyCertificates_ResultTag** - Code location identifier for the result of validating a certificate.
+
+- **VerifyCertificates_Success** - Flag that indicates the validity of a certificate.
+
+- **VerifySignature_ResultTag** - Code location identifier for the result of validating a signature. 
+
+- **VerifySignature_Success** - Flag that indicates the success of validating a signature.
+
+- **VerifyTimeValidity_ResultTag** - Code location identifier for the result of verifying the time validity of a certificate.
+
+- **VerifyTimeValidity_Success** - Flag that indicates the time validity of a certificate.
 
 
 ### Office.Licensing.TelemetryFlow.OLSResults
@@ -18603,6 +18875,15 @@ The following fields are collected:
 
 - **source** - The origin of an action. For example, initiated from the user, automatically by the client, etc.
 
+### Office.Android.DocsUI.PaywallControl.AbandonPurchaseAlertEvent
+
+The event is triggered when users dismiss Google's payment checkout screen and see the payment abandon dialogue. The data is used to ensure the dialog is working as expected and helps navigate the end-to-end flows in order to identify root cause of any potential errors. 
+
+The following fields are collected:
+
+- **UserAction** - Indicates whether the dialog was displayed to the user and what action the user took in the dialog.
+
+
 ### Office.Android.DocsUI.PaywallControl.AutoRenewData
 
 This event is triggered when the user lands on the Subscription Auto Renew Reminder screen. The data is needed to ensure that the experience for auto renew reminder is working as expected and to ensure end to end service reliability.
@@ -18646,6 +18927,23 @@ The following fields are collected:
 - **EventDate** - Timestamp of the event occurrence 
 
 - **SessionID** - GUID to connect events by session
+
+### Office.Android.DocsUI.PaywallControl.IrisPushNotificationClicked
+
+This event is triggered when a user activates the app by clicking on different types of push notifications through Microsoft server, and app may or may not be in session. This data is used to identify push notifications that activated the app and measure app activation through different push notifications.
+
+The following fields are collected:
+
+- **creativeId** - CreativeId from the campaign created for different types of notifications. This identifier is used to differentiate different types of Push notifications as different types of Push notifications will have different CreativeId.
+
+
+### Office.Android.DocsUI.PaywallControl.NoNetworkWhilePurchaseEntrypointClicked
+
+This event is triggered when a user goes to purchase a subscription via any purchase entry point but isn't able to see the paywall screen due to network unavailability which stops the subscription purchase flow with a no network error dialog. This data will help identify and analyze entry points for the subscription screen, pinpointing the root cause of the bad network issues. This event will also help determine the count of failures from this issue that will assist in effective monitoring. 
+
+The following fields are collected:
+
+- **EntryPoint** - String – Entry point of the paywall subscription screen in the app.
 
 
 ### Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
@@ -18693,6 +18991,24 @@ The following fields are collected:
 - **SessionId** - Guid: Unique Paywall session identifier
 
 - **V2Enabled** - Boolean – Flag denoting if experimental modern upsell UX was shown.
+
+### Office.Android.DocsUI.PaywallControl.SSOSyncInProgress
+
+This event occurs when a user tries to purchase a subscription but cannot see the paywall screen due to an ongoing SSO (Single sign-on) session. The SSO session sometimes disrupts the purchase process, resulting in an error dialogue. Microsoft uses SSO to allow users to access multiple applications with one set of login credentials. Many purchase failures are caused by SSO in progress. This data is needed to help identify and analyze entry points for the subscription screen, pinpointing the root cause of SSO-related purchase issues. This event will also help determine the count of failures from this issue that will assist in effective monitoring.
+
+The following fields are collected:
+
+- **EntryPoint** - String – Entry point of the paywall subscription screen in the app.
+
+
+### Office.Android.DocsUI.PaywallControl.SubscriptionEntrypointPurchaseAttempted
+
+This event is triggered when a user goes to purchase a subscription through our paywall screen that can come from various entry points in-app. Various errors can occur before the user encounters the subscription paywall screen. This data is needed in identifying and analyzing the entry points for the subscription screen, thereby narrowing down the root cause of unreliable purchases, and improving purchase reliability.
+
+The following fields are collected:
+
+- **EntryPoint** - String – Entry point of the paywall subscription screen in the app.
+
 
 ### Office.Android.DocsUI.PaywallControl.SubscriptionOfferTypeDuringPurchase
 

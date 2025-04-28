@@ -9,12 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
-ms.date: 03/01/2023
+ms.date: 04/25/2025
 ---
 
 # Document and solution types monitored by Office Telemetry Dashboard
 
 ***Applies to:*** *Office 2019, Office 2016*
+
+[!INCLUDE [Office 2016 and 2019 end of support notification](../includes/office-2016-2019-eos.md)]
 
 The following table lists the document and solution types that Office Telemetry Dashboard monitors in Office 2019 and Office 2016.
   

@@ -178,6 +178,15 @@ items:
       - name: Office for Mac
         href: mac/deployment-guide-for-office-for-mac.md
 
+      - name: Microsoft 365 companions (preview)
+        items:
+          - name: Overview of companions (preview)
+            href: companions/overview.md
+          - name: People companion
+            href: companions/people.md
+          - name: File Search companion
+            href: companions/file-search.md  
+
       - name: Microsoft 365 Insider Program for Business
         href: insider/index.yml
 

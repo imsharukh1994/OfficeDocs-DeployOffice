@@ -12,7 +12,7 @@ ms.collection:
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
-ms.date: 08/01/2024
+ms.date: 04/01/2025
 ---
 
 # Overview of update channels for Microsoft 365 Apps
@@ -243,7 +243,7 @@ After Microsoft 365 Apps is installed, you can change the update channel for a d
 ## Additional information about update channels for Microsoft 365 Apps
 
 ### Other products
-- These update channels also apply to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 3 or Visio Plan 2.
+- These update channels also apply to the subscription versions of the Project and Visio desktop apps. For example, if you have Planner and Project Plan 3 or Visio Plan 2.
 - OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app `update` process](/onedrive/sync-client-update-process) and [Teams update process](/microsoftteams/teams-client-update).
 - If you're deploying volume licensed versions of Office such as Office Long Term Service Channel (LTSC) Professional Plus 2021 or Office LTSC Standard 2021, you need to use a different update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
 - If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use. For more information, see [Update channel for Office 2019](/office/2019/update#update-channel-for-office-2019).
