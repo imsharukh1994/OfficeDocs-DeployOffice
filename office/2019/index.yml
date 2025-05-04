@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Office 2019 deployment documentation
-summary: Resources for IT professionals and admins on how to deploy and manage Office 2019.
+summary: Learn how to plan, deploy, activate, update, and troubleshoot Office 2019 in enterprise and IT environments.
 
 metadata:
   title: Office 2019 deployment documentation
@@ -15,6 +15,9 @@ metadata:
   ms.collection:
     - tier1
     - essentials-navigation
+  ms.custom: office2019-landing
+  ms.localizationpriority: high
+  keywords: Office 2019 deployment, Office 2019 activation, Office 2019 update, Volume licensing, Office for Mac
 
 landingContent:
   # Card
@@ -40,21 +43,21 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Volume activation of Office 2019
+          - text: Volume activation overview
             url: ../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/2019/toc.json
-      - linkListType: tutorial
+      - linkListType: configuration
         links:
-          - text: Configure a KMS host computer
+          - text: Configure a KMS host
             url: ../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/2019/toc.json
           - text: Configure DNS for KMS
-            url: ../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/2019/toc.json            
+            url: ../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/2019/toc.json
       - linkListType: how-to-guide
         links:
-          - text: Activate by using KMS
+          - text: Activate with KMS
             url: ../volume-license-activation/activate-office-by-using-kms.md?toc=/office/2019/toc.json
-          - text: Activate by using MAK
+          - text: Activate with MAK
             url: ../volume-license-activation/activate-office-by-using-mak.md?toc=/office/2019/toc.json
-          - text: Activate by using Active Directory
+          - text: Activate with Active Directory
             url: ../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/2019/toc.json
 
   # Card
@@ -92,11 +95,21 @@ landingContent:
             url: /microsoft-365-apps/mac/volume-license-serializer?toc=/office/2019/toc.json
 
   # Card
-  - title: Troubleshooting and Support
+  - title: Troubleshooting and User Support
     linkLists:
       - linkListType: reference
         links:
           - text: Troubleshoot Office 2019
             url: /office/troubleshoot/office-client-welcome
-          - text: End User Help and Learning
+          - text: Microsoft 365 end user support and learning
             url: https://support.microsoft.com/microsoft-365
+
+  # Card (Optional Enhancement)
+  - title: FAQs and Best Practices
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Office 2019 FAQ
+            url: /microsoft-365/admin/faq/office-2019-faq?toc=/office/2019/toc.json
+          - text: Deployment best practices
+            url: /microsoft-365/deployoffice/best-practices-deploy?toc=/office/2019/toc.json
